@@ -171,3 +171,10 @@ if( XDISPATCH_INCLUDE_PACKAGING )
 
     include(CPack)
 endif()
+
+
+include_directories(/libxdispatch/include/)
+
+add_executable(my_run main.cpp)
+
+target_link_libraries(my_run xdispatch)
