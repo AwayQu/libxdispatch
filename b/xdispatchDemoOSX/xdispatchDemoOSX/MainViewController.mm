@@ -7,7 +7,7 @@
 //
 
 #import "MainViewController.h"
-
+#import <xdispatch/dispatch.h>
 @interface MainViewController ()
 
 @end
@@ -19,7 +19,10 @@
     // Do view setup here.
 }
 - (IBAction)click:(id)sender {
-    NSLog(@"click");
+    NSLog(@"%@, click", [NSThread currentThread]);
+    xdispatch::global_queue().async(${
+        NSLog(@"%@, 1111", [NSThread currentThread]);
+    });
 }
 
 @end

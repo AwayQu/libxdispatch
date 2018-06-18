@@ -13,7 +13,7 @@
 		CE35D26020D805E000CE6FC3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE35D25F20D805E000CE6FC3 /* main.m */; };
 		CE35D26B20D805E000CE6FC3 /* xdispatchDemoOSXTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE35D26A20D805E000CE6FC3 /* xdispatchDemoOSXTests.m */; };
 		CE35D27620D805E000CE6FC3 /* xdispatchDemoOSXUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE35D27520D805E000CE6FC3 /* xdispatchDemoOSXUITests.m */; };
-		CE35D28620D806DF00CE6FC3 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE35D28420D806DF00CE6FC3 /* MainViewController.m */; };
+		CE35D28620D806DF00CE6FC3 /* MainViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = CE35D28420D806DF00CE6FC3 /* MainViewController.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		CE35D28720D806DF00CE6FC3 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE35D28520D806DF00CE6FC3 /* MainViewController.xib */; };
 		CE35D28C20D8089100CE6FC3 /* xdispatch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE35D28B20D8089100CE6FC3 /* xdispatch.framework */; };
 		CE35D29220D80A0F00CE6FC3 /* xdispatch.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = CE35D29120D80A0F00CE6FC3 /* xdispatch.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -65,7 +65,7 @@
 		CE35D27520D805E000CE6FC3 /* xdispatchDemoOSXUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = xdispatchDemoOSXUITests.m; sourceTree = "<group>"; };
 		CE35D27720D805E000CE6FC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE35D28320D806DF00CE6FC3 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
-		CE35D28420D806DF00CE6FC3 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		CE35D28420D806DF00CE6FC3 /* MainViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = MainViewController.mm; sourceTree = "<group>"; };
 		CE35D28520D806DF00CE6FC3 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		CE35D28920D8080900CE6FC3 /* xdispatch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = xdispatch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE35D28B20D8089100CE6FC3 /* xdispatch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = xdispatch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -131,7 +131,7 @@
 				CE35D25F20D805E000CE6FC3 /* main.m */,
 				CE35D26120D805E000CE6FC3 /* xdispatchDemoOSX.entitlements */,
 				CE35D28320D806DF00CE6FC3 /* MainViewController.h */,
-				CE35D28420D806DF00CE6FC3 /* MainViewController.m */,
+				CE35D28420D806DF00CE6FC3 /* MainViewController.mm */,
 				CE35D28520D806DF00CE6FC3 /* MainViewController.xib */,
 			);
 			path = xdispatchDemoOSX;
@@ -296,7 +296,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE35D26020D805E000CE6FC3 /* main.m in Sources */,
-				CE35D28620D806DF00CE6FC3 /* MainViewController.m in Sources */,
+				CE35D28620D806DF00CE6FC3 /* MainViewController.mm in Sources */,
 				CE35D25820D805DF00CE6FC3 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -463,13 +463,16 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = SPTJD8WYRM;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../../libxdispatch/include";
 				INFOPLIST_FILE = xdispatchDemoOSX/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				OTHER_CODE_SIGN_FLAGS = "--deep";
 				PRODUCT_BUNDLE_IDENTIFIER = me.awayqu.xdispatchDemoOSX;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/../../libxdispatch/include";
 			};
 			name = Debug;
 		};
@@ -481,13 +484,16 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = SPTJD8WYRM;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../../libxdispatch/include";
 				INFOPLIST_FILE = xdispatchDemoOSX/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				OTHER_CODE_SIGN_FLAGS = "--deep";
 				PRODUCT_BUNDLE_IDENTIFIER = me.awayqu.xdispatchDemoOSX;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/../../libxdispatch/include";
 			};
 			name = Release;
 		};
