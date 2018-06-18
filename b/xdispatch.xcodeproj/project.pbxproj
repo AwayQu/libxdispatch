@@ -1,0 +1,2395 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		0A431441EEA341AD850C5F93 /* NightlyMemoryCheck */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = E23E9E82E76A4BC4AB7F89CF /* Build configuration list for PBXAggregateTarget "NightlyMemoryCheck" */;
+			buildPhases = (
+				4E389B3D06B24DB6A3F0BDD3 /* CMake Rules */,
+			);
+			dependencies = (
+				2E19EC7DCB22489C939FB4B2 /* PBXTargetDependency */,
+			);
+			name = NightlyMemoryCheck;
+			productName = NightlyMemoryCheck;
+		};
+		21C16C67AF74459CAED0F5DC /* Experimental */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 767ECAE5C6AF46DC9E3399B2 /* Build configuration list for PBXAggregateTarget "Experimental" */;
+			buildPhases = (
+				D1FD0586A1DA4144BE4ABD11 /* CMake Rules */,
+			);
+			dependencies = (
+				84508B5772C7475DBCAEF914 /* PBXTargetDependency */,
+			);
+			name = Experimental;
+			productName = Experimental;
+		};
+		29414DC786EF40DFBB448D3D /* install */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = FB96319343224DB8BC168E1A /* Build configuration list for PBXAggregateTarget "install" */;
+			buildPhases = (
+				3B1B59D837ED49A1A683F463 /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				13B66C393F3840A990CDA4A7 /* PBXTargetDependency */,
+			);
+			name = install;
+			productName = install;
+		};
+		3E68E3FFFFA143D0A9A22534 /* RUN_TESTS */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = A45DF51F87B643FBACE90370 /* Build configuration list for PBXAggregateTarget "RUN_TESTS" */;
+			buildPhases = (
+				0093AF1243C646489F2B5E59 /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+			);
+			name = RUN_TESTS;
+			productName = RUN_TESTS;
+		};
+		9B79F13B4FC0470F8C1E05C2 /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 8D200EB6935844DCA3387314 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				FECD67C916B144B49A0798D3 /* CMake Rules */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+		9D218E7FA95848D58464AACF /* Continuous */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = A7D2C1DF50D341D2ACD58E8C /* Build configuration list for PBXAggregateTarget "Continuous" */;
+			buildPhases = (
+				2D30C16F6B9449C2B7396A5D /* CMake Rules */,
+			);
+			dependencies = (
+				964E4AA8DA2A44F9856CA9BD /* PBXTargetDependency */,
+			);
+			name = Continuous;
+			productName = Continuous;
+		};
+		ED3F95B32F7E42078B1A2159 /* Nightly */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 0E88487BC3DC4AC9BB811EFB /* Build configuration list for PBXAggregateTarget "Nightly" */;
+			buildPhases = (
+				70556EAAB204465D8E35BFC2 /* CMake Rules */,
+			);
+			dependencies = (
+				9F3FE77A6E1D41918E685171 /* PBXTargetDependency */,
+			);
+			name = Nightly;
+			productName = Nightly;
+		};
+		ED5F2E71B5544512B71825E8 /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 28BFACAD2947428A855CCBF4 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				3B3AE74299AA41F1AF0C29C5 /* CMake Rules */,
+			);
+			dependencies = (
+				A950F464525947C0BCCB217D /* PBXTargetDependency */,
+				410C267D0AA1438A9059AAE3 /* PBXTargetDependency */,
+				94A11BEC047D4E868C082C21 /* PBXTargetDependency */,
+				86C2DAAD241F4DD486A39371 /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		0277F3FC7E77416EABCE1404 /* /Users/away/code/github/testxdispatch/tests/dispatch_serialqueue.c */ = {isa = PBXBuildFile; fileRef = F78A208525F842AAA9C0B731 /* /Users/away/code/github/testxdispatch/tests/dispatch_serialqueue.c */; };
+		03FFDC1711014B169D210AAF /* /Users/away/code/github/testxdispatch/libxdispatch/src/source.cpp */ = {isa = PBXBuildFile; fileRef = C9AF69FC3E1E4FFE819DF0D9 /* /Users/away/code/github/testxdispatch/libxdispatch/src/source.cpp */; };
+		0CF58D31CE7A4442928C276F /* /Users/away/code/github/testxdispatch/libxdispatch/src/source_internal.cpp */ = {isa = PBXBuildFile; fileRef = 4E4E9EE41196451FA70106B1 /* /Users/away/code/github/testxdispatch/libxdispatch/src/source_internal.cpp */; };
+		120D57D768B5416486D5921D /* /Users/away/code/github/testxdispatch/tests/dispatch_proc_blocks.c */ = {isa = PBXBuildFile; fileRef = 2D0169733B5E431F8569F77D /* /Users/away/code/github/testxdispatch/tests/dispatch_proc_blocks.c */; };
+		12172C30BD2646B2A7AD7308 /* /Users/away/code/github/testxdispatch/tests/dispatch_after_blocks.c */ = {isa = PBXBuildFile; fileRef = D08CD9EF6ED44BECB9318D20 /* /Users/away/code/github/testxdispatch/tests/dispatch_after_blocks.c */; };
+		12258DB2557643DB9A0EAAF0 /* /Users/away/code/github/testxdispatch/tests/cxx_dispatch_timer.cpp */ = {isa = PBXBuildFile; fileRef = 8CA201D8BDEE46DC9493BF75 /* /Users/away/code/github/testxdispatch/tests/cxx_dispatch_timer.cpp */; };
+		12C84DDECA454BD1ADD9896E /* /Users/away/code/github/testxdispatch/tests/cxx_dispatch_fibo.cpp */ = {isa = PBXBuildFile; fileRef = 68FC2637A1A94951AE7F6EA2 /* /Users/away/code/github/testxdispatch/tests/cxx_dispatch_fibo.cpp */; };
+		17781AA811EC4CB49AB298A4 /* /Users/away/code/github/testxdispatch/libxdispatch/include/xdispatch/platform.h */ = {isa = PBXBuildFile; fileRef = 1D55672D6F8247B7ACC5FC92 /* /Users/away/code/github/testxdispatch/libxdispatch/include/xdispatch/platform.h */; settings = {ATTRIBUTES = (Public); }; };
+		18003A1083DC4159835A4709 /* /Users/away/code/github/testxdispatch/tests/cxx_dispatch_cascade_blocks.cpp */ = {isa = PBXBuildFile; fileRef = 4D13EB1B8B61442F90FBEF1F /* /Users/away/code/github/testxdispatch/tests/cxx_dispatch_cascade_blocks.cpp */; };
+		183A6575282F499C80DFEB5A /* /Users/away/code/github/testxdispatch/libxdispatch/include/xdispatch/semaphore.h */ = {isa = PBXBuildFile; fileRef = 12BECC1D7CC044EDA24579E3 /* /Users/away/code/github/testxdispatch/libxdispatch/include/xdispatch/semaphore.h */; settings = {ATTRIBUTES = (Public); }; };
+		1B03F836E27D47CD9CA357A6 /* /Users/away/code/github/testxdispatch/tests/cxx_dispatch_read_blocks.cpp */ = {isa = PBXBuildFile; fileRef = 560DAE732C5D4F06BFD6177B /* /Users/away/code/github/testxdispatch/tests/cxx_dispatch_read_blocks.cpp */; };
+		1DB7520DA5374B299AAD1C0B /* /Users/away/code/github/testxdispatch/tests/dispatch_socket_read_write.c */ = {isa = PBXBuildFile; fileRef = 88D4CBAEB8B64450A6637C82 /* /Users/away/code/github/testxdispatch/tests/dispatch_socket_read_write.c */; };
+		1E3A887D3D5A4758928ED97A /* /Users/away/code/github/testxdispatch/tests/cxx_tests.h */ = {isa = PBXBuildFile; fileRef = 55EC02E7A46940A0ABDD2EC0 /* /Users/away/code/github/testxdispatch/tests/cxx_tests.h */; };
+		1E4F1F45184D460A90958D07 /* /Users/away/code/github/testxdispatch/libxdispatch/src/queue.cpp */ = {isa = PBXBuildFile; fileRef = 9B2C3979BE9C477F83593348 /* /Users/away/code/github/testxdispatch/libxdispatch/src/queue.cpp */; };
+		1FF6D861F71B4F89AAD62216 /* /Users/away/code/github/testxdispatch/tests/munit/private.h */ = {isa = PBXBuildFile; fileRef = B22915A843CD460E870C5645 /* /Users/away/code/github/testxdispatch/tests/munit/private.h */; };
+		26F7D4C2756546B0B363CD45 /* /Users/away/code/github/testxdispatch/tests/dispatch_once.c */ = {isa = PBXBuildFile; fileRef = 484A3330DAD240899B4A1647 /* /Users/away/code/github/testxdispatch/tests/dispatch_once.c */; };
+		288DC70A399D41028C6667F2 /* /Users/away/code/github/testxdispatch/tests/cxx_dispatch_once_blocks.cpp */ = {isa = PBXBuildFile; fileRef = F2BF64D904AF4BD2804E8C67 /* /Users/away/code/github/testxdispatch/tests/cxx_dispatch_once_blocks.cpp */; };
+		2ADD23539B2943969D2DE373 /* /Users/away/code/github/testxdispatch/tests/cxx_dispatch_queue_blocks.cpp */ = {isa = PBXBuildFile; fileRef = CE88FA6D6C7146C392F79C88 /* /Users/away/code/github/testxdispatch/tests/cxx_dispatch_queue_blocks.cpp */; };
+		2B4ACDD9F33B45C99B18D747 /* /Users/away/code/github/testxdispatch/tests/dispatch_apply.c */ = {isa = PBXBuildFile; fileRef = BCFBE6806A9A4B858D15372B /* /Users/away/code/github/testxdispatch/tests/dispatch_apply.c */; };
+		2FA03A73EBB14B7EB434EE25 /* /Users/away/code/github/testxdispatch/tests/cxx_dispatch_source.cpp */ = {isa = PBXBuildFile; fileRef = 3CE030CCC98048428024B64F /* /Users/away/code/github/testxdispatch/tests/cxx_dispatch_source.cpp */; };
+		318E9DA3E67E41388E6527DE /* /Users/away/code/github/testxdispatch/tests/cxx_dispatch_group_lambda.cpp */ = {isa = PBXBuildFile; fileRef = B5B678ED03F0428499B86A4E /* /Users/away/code/github/testxdispatch/tests/cxx_dispatch_group_lambda.cpp */; };
+		31F04CB73D4D4FE595659626 /* /Users/away/code/github/testxdispatch/tests/queue_finalizer.c */ = {isa = PBXBuildFile; fileRef = C3A0CEB61E134490A9D44598 /* /Users/away/code/github/testxdispatch/tests/queue_finalizer.c */; };
+		37316BCAC4A643EA8C80A246 /* /Users/away/code/github/testxdispatch/tests/cxx_dispatch_semaphore.cpp */ = {isa = PBXBuildFile; fileRef = 629CF9E5958745E99F1D5AC0 /* /Users/away/code/github/testxdispatch/tests/cxx_dispatch_semaphore.cpp */; };
+		384F64F4D64E4BC28C008F5C /* /Users/away/code/github/testxdispatch/tests/cxx_dispatch_source_blocks.cpp */ = {isa = PBXBuildFile; fileRef = 3D65694A47574EC2ABA21879 /* /Users/away/code/github/testxdispatch/tests/cxx_dispatch_source_blocks.cpp */; };
+		3878F373C6A94452B229B2F7 /* /Users/away/code/github/testxdispatch/tests/dispatch_group.c */ = {isa = PBXBuildFile; fileRef = 6E4AF4FA3B7349EA82B23C7A /* /Users/away/code/github/testxdispatch/tests/dispatch_group.c */; };
+		393E1C1C1BAD4BA1A129EF32 /* /Users/away/code/github/testxdispatch/libxdispatch/include/xdispatch/base.h */ = {isa = PBXBuildFile; fileRef = 168B75C3FB4E456FBC3323DA /* /Users/away/code/github/testxdispatch/libxdispatch/include/xdispatch/base.h */; settings = {ATTRIBUTES = (Public); }; };
+		3A537AA089634014ADD2A59C /* /Users/away/code/github/testxdispatch/tests/munit/tools.c */ = {isa = PBXBuildFile; fileRef = 3FB66DD6825A4FC5B86966E4 /* /Users/away/code/github/testxdispatch/tests/munit/tools.c */; };
+		3B1B2FD129624740B7F4D079 /* /Users/away/code/github/testxdispatch/tests/cxx_dispatch_once.cpp */ = {isa = PBXBuildFile; fileRef = 0899B8D3FC6D418EA95BBF2C /* /Users/away/code/github/testxdispatch/tests/cxx_dispatch_once.cpp */; };
+		3CBA708D076649E6B0DD7C69 /* /Users/away/code/github/testxdispatch/tests/munit/list.c */ = {isa = PBXBuildFile; fileRef = 338D6F1D08D047FC9837D5A5 /* /Users/away/code/github/testxdispatch/tests/munit/list.c */; };
+		3DB89D6941294ADE9C4E4670 /* /Users/away/code/github/testxdispatch/libxdispatch/include/xdispatch/dispatch */ = {isa = PBXBuildFile; fileRef = A06120D68B6943ABB9EBAF4C /* /Users/away/code/github/testxdispatch/libxdispatch/include/xdispatch/dispatch */; settings = {ATTRIBUTES = (Public); }; };
+		427DBB2124384A89A322B2E3 /* /Users/away/code/github/testxdispatch/tests/posix_api.c */ = {isa = PBXBuildFile; fileRef = 3360C545E9804FFDBDA4D361 /* /Users/away/code/github/testxdispatch/tests/posix_api.c */; };
+		449CF487077C4A5192C1F617 /* /Users/away/code/github/testxdispatch/libxdispatch/include/xdispatch/synchronized.h */ = {isa = PBXBuildFile; fileRef = EF3D49E9E7FA45DEA57D52F2 /* /Users/away/code/github/testxdispatch/libxdispatch/include/xdispatch/synchronized.h */; settings = {ATTRIBUTES = (Public); }; };
+		44B79534BD994BC69D4D3385 /* /Users/away/code/github/testxdispatch/tests/cxx_free_blocks.cpp */ = {isa = PBXBuildFile; fileRef = A6E7F6056A144E128FC11DC2 /* /Users/away/code/github/testxdispatch/tests/cxx_free_blocks.cpp */; };
+		44BEE3056F5844E8B3696C5F /* /Users/away/code/github/testxdispatch/tests/cxx_dispatch_read_lambda.cpp */ = {isa = PBXBuildFile; fileRef = ECEF6425F11C4D34A0CE1E46 /* /Users/away/code/github/testxdispatch/tests/cxx_dispatch_read_lambda.cpp */; };
+		4929A63BB43647AA9CBFD810 /* /Users/away/code/github/testxdispatch/libxdispatch/include/xdispatch/group.h */ = {isa = PBXBuildFile; fileRef = CC393A57BD994C59B2A282DB /* /Users/away/code/github/testxdispatch/libxdispatch/include/xdispatch/group.h */; settings = {ATTRIBUTES = (Public); }; };
+		4AAF33AA95B14E9BB15C9E2A /* /Users/away/code/github/testxdispatch/libxdispatch/src/execution.h */ = {isa = PBXBuildFile; fileRef = 3832D63B6D114269B4F39770 /* /Users/away/code/github/testxdispatch/libxdispatch/src/execution.h */; };
+		4B25CD9026D94CE3B6245AB7 /* /Users/away/code/github/testxdispatch/tests/dispatch_group_blocks.c */ = {isa = PBXBuildFile; fileRef = D1BAF77E77994223AE9D2DA5 /* /Users/away/code/github/testxdispatch/tests/dispatch_group_blocks.c */; };
+		4BCC1B5C70D1440EA9E5454F /* /Users/away/code/github/testxdispatch/tests/cxx_dispatch_once_lambda.cpp */ = {isa = PBXBuildFile; fileRef = E6B9727697B54EF1868862FD /* /Users/away/code/github/testxdispatch/tests/cxx_dispatch_once_lambda.cpp */; };
+		4DF3BB820F434C00B83C9EDC /* /Users/away/code/github/testxdispatch/libxdispatch/src/execution.cpp */ = {isa = PBXBuildFile; fileRef = FCEA9CBD480F49AC9BD750B3 /* /Users/away/code/github/testxdispatch/libxdispatch/src/execution.cpp */; };
+		4E168D1316894669BBD9CE08 /* /Users/away/code/github/testxdispatch/tests/cxx_synchronized.cpp */ = {isa = PBXBuildFile; fileRef = 36C3FC65EF7E43088D825710 /* /Users/away/code/github/testxdispatch/tests/cxx_synchronized.cpp */; };
+		52D8A322E07A437AA0FC2896 /* /Users/away/code/github/testxdispatch/libxdispatch/include/xdispatch/source.h */ = {isa = PBXBuildFile; fileRef = 5C91FEF2FBBE427DB8C4DBB8 /* /Users/away/code/github/testxdispatch/libxdispatch/include/xdispatch/source.h */; settings = {ATTRIBUTES = (Public); }; };
+		5389DE703A594E0CAAFC1E81 /* /Users/away/code/github/testxdispatch/tests/munit/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 515FC37406D34F9AAB6C4CD1 /* /Users/away/code/github/testxdispatch/tests/munit/CMakeLists.txt */; };
+		57924E207AD64C7592777044 /* /Users/away/code/github/testxdispatch/libxdispatch/src/shared_constructor.cpp */ = {isa = PBXBuildFile; fileRef = B8641D90039142BD9D8EB0C1 /* /Users/away/code/github/testxdispatch/libxdispatch/src/shared_constructor.cpp */; };
+		59E56DE9F6FF4AC49DE33E98 /* /Users/away/code/github/testxdispatch/tests/dispatch_semaphore_blocks.c */ = {isa = PBXBuildFile; fileRef = 74BEB0782CBE4995B7429D7D /* /Users/away/code/github/testxdispatch/tests/dispatch_semaphore_blocks.c */; };
+		5A634902F35F4371BC7F1C10 /* /Users/away/code/github/testxdispatch/tests/dispatch_after.c */ = {isa = PBXBuildFile; fileRef = D2D8F2FEB78F4162881EBEE7 /* /Users/away/code/github/testxdispatch/tests/dispatch_after.c */; };
+		60E70706A261408D90B99852 /* /Users/away/code/github/testxdispatch/libxdispatch/include/xdispatch/blocks.h */ = {isa = PBXBuildFile; fileRef = 76DBFFE54E48445BB5540DC8 /* /Users/away/code/github/testxdispatch/libxdispatch/include/xdispatch/blocks.h */; settings = {ATTRIBUTES = (Public); }; };
+		6113917954B04912802EFC05 /* /Users/away/code/github/testxdispatch/tests/cxx_dispatch_serialqueue_blocks.cpp */ = {isa = PBXBuildFile; fileRef = 088F43008F954850B318139D /* /Users/away/code/github/testxdispatch/tests/cxx_dispatch_serialqueue_blocks.cpp */; };
+		64CF8FAAE5C54A408FB95012 /* /Users/away/code/github/testxdispatch/libxdispatch/include/xdispatch/lambda_dispatch.h */ = {isa = PBXBuildFile; fileRef = 13E036A4CCF1480B89991E50 /* /Users/away/code/github/testxdispatch/libxdispatch/include/xdispatch/lambda_dispatch.h */; settings = {ATTRIBUTES = (Public); }; };
+		664256CBDD5D4B918A39B551 /* /Users/away/code/github/testxdispatch/libxdispatch/include/xdispatch/dispatch.h */ = {isa = PBXBuildFile; fileRef = 955D2F93EA3F4C3C8F776144 /* /Users/away/code/github/testxdispatch/libxdispatch/include/xdispatch/dispatch.h */; settings = {ATTRIBUTES = (Public); }; };
+		6B1AC56453CA4E46990BC004 /* /Users/away/code/github/testxdispatch/tests/cxx_dispatch_group_blocks.cpp */ = {isa = PBXBuildFile; fileRef = 4EE68487AA534498A60A2AD2 /* /Users/away/code/github/testxdispatch/tests/cxx_dispatch_group_blocks.cpp */; };
+		70CFD44B655F468CA32F8B83 /* /Users/away/code/github/testxdispatch/tests/munit/runner.c */ = {isa = PBXBuildFile; fileRef = 66FDC20A85FD4085AE96ACA0 /* /Users/away/code/github/testxdispatch/tests/munit/runner.c */; };
+		7529F04B1D054FC3BD822FD6 /* /Users/away/code/github/testxdispatch/libxdispatch/include/xdispatch/queue.h */ = {isa = PBXBuildFile; fileRef = 9053D80C16A64FDDBB3B1D43 /* /Users/away/code/github/testxdispatch/libxdispatch/include/xdispatch/queue.h */; settings = {ATTRIBUTES = (Public); }; };
+		766BA0A470B949C3A7CD86AB /* /Users/away/code/github/testxdispatch/tests/dispatch_timer_bit31_blocks.c */ = {isa = PBXBuildFile; fileRef = 2F551DB96CCC44D182E555D7 /* /Users/away/code/github/testxdispatch/tests/dispatch_timer_bit31_blocks.c */; };
+		783944C8E5BC4FB681158FBD /* /Users/away/code/github/testxdispatch/libxdispatch/include/xdispatch/pointer.h */ = {isa = PBXBuildFile; fileRef = 7A797C1854EC4D29B7C3B432 /* /Users/away/code/github/testxdispatch/libxdispatch/include/xdispatch/pointer.h */; settings = {ATTRIBUTES = (Public); }; };
+		79157CCA103046C8BAC25A8B /* /Users/away/code/github/testxdispatch/tests/munit/MUnit_assert.h */ = {isa = PBXBuildFile; fileRef = 73BF56012A874C68AA875B32 /* /Users/away/code/github/testxdispatch/tests/munit/MUnit_assert.h */; };
+		7B187814C3AC4C85B7D610E1 /* /Users/away/code/github/testxdispatch/libxdispatch/include/xdispatch/dispatch_decl.h */ = {isa = PBXBuildFile; fileRef = D45DC1F3D7B94076BEEFDAF1 /* /Users/away/code/github/testxdispatch/libxdispatch/include/xdispatch/dispatch_decl.h */; settings = {ATTRIBUTES = (Public); }; };
+		7BB1DF55BF7F4DAAB51B9671 /* /Users/away/code/github/testxdispatch/tests/dispatch_api.c */ = {isa = PBXBuildFile; fileRef = 9F3137CCBC3649C5870E7E3C /* /Users/away/code/github/testxdispatch/tests/dispatch_api.c */; };
+		7EA5B0705F604E9F9D5C25A5 /* /Users/away/code/github/testxdispatch/tests/cxx_dispatch_group.cpp */ = {isa = PBXBuildFile; fileRef = 6B6C2D957FD446B28B4E03C0 /* /Users/away/code/github/testxdispatch/tests/cxx_dispatch_group.cpp */; };
+		8072AAE763274F60B711F463 /* /Users/away/code/github/testxdispatch/tests/cxx_dispatch_current.cpp */ = {isa = PBXBuildFile; fileRef = EBB37B13BF0B44A6AB9F4790 /* /Users/away/code/github/testxdispatch/tests/cxx_dispatch_current.cpp */; };
+		82C58C48ABF840969618EC5C /* /Users/away/code/github/testxdispatch/tests/munit/MUnit_runner.h */ = {isa = PBXBuildFile; fileRef = 9D50299D16164A7C9B521A21 /* /Users/away/code/github/testxdispatch/tests/munit/MUnit_runner.h */; };
+		82DA4FA8EC8B4761AC1C1E47 /* /Users/away/code/github/testxdispatch/tests/munit/list.h */ = {isa = PBXBuildFile; fileRef = CC9489EE8AAD45F9ADB39957 /* /Users/away/code/github/testxdispatch/tests/munit/list.h */; };
+		8C113D04671545978A375CBD /* /Users/away/code/github/testxdispatch/tests/main.c */ = {isa = PBXBuildFile; fileRef = A15362BA538D45659A161C0D /* /Users/away/code/github/testxdispatch/tests/main.c */; };
+		8C8E1DBB4564490BA17A301B /* /Users/away/code/github/testxdispatch/libxdispatch/src/timer.cpp */ = {isa = PBXBuildFile; fileRef = 1059BE5BAF1F49BF8759BE39 /* /Users/away/code/github/testxdispatch/libxdispatch/src/timer.cpp */; };
+		8F44FBFDFF414E0A9A34D88F /* /Users/away/code/github/testxdispatch/tests/dispatch_apply_blocks.c */ = {isa = PBXBuildFile; fileRef = FE8677E98F584D37A0586593 /* /Users/away/code/github/testxdispatch/tests/dispatch_apply_blocks.c */; };
+		914E00DD658A48D19A2B39A2 /* /Users/away/code/github/testxdispatch/tests/atomic_operations.c */ = {isa = PBXBuildFile; fileRef = 9FD0D581122E41899084992C /* /Users/away/code/github/testxdispatch/tests/atomic_operations.c */; };
+		93DD4F3976044E29BAC3FFF4 /* /Users/away/code/github/testxdispatch/tests/cxx_dispatch_cascade_lambda.cpp */ = {isa = PBXBuildFile; fileRef = BC10D39BEA84403AA691419C /* /Users/away/code/github/testxdispatch/tests/cxx_dispatch_cascade_lambda.cpp */; };
+		949EAEB3A823489D8EF86D8C /* /Users/away/code/github/testxdispatch/tests/dispatch_starfish.c */ = {isa = PBXBuildFile; fileRef = B47EC39E4EC74EFA9FF2745C /* /Users/away/code/github/testxdispatch/tests/dispatch_starfish.c */; };
+		974B8EEC6C8F4B7D9FD384CE /* /Users/away/code/github/testxdispatch/tests/pthread_api.c */ = {isa = PBXBuildFile; fileRef = 933F72DD223C4CEC91D19F6F /* /Users/away/code/github/testxdispatch/tests/pthread_api.c */; };
+		9D09A19AD10C42E28F22D2B3 /* /Users/away/code/github/testxdispatch/tests/cxx_free_lambda.cpp */ = {isa = PBXBuildFile; fileRef = 789D9FAC2FA649189AB60F85 /* /Users/away/code/github/testxdispatch/tests/cxx_free_lambda.cpp */; };
+		A2DF0E15CB474729AAB52979 /* /Users/away/code/github/testxdispatch/libxdispatch/src/synchronized.cpp */ = {isa = PBXBuildFile; fileRef = 007B6755CD7D4C85BDEBE37D /* /Users/away/code/github/testxdispatch/libxdispatch/src/synchronized.cpp */; };
+		A912FB26461A419EB97A9CCD /* /Users/away/code/github/testxdispatch/libxdispatch/include/xdispatch/operation.h */ = {isa = PBXBuildFile; fileRef = 25F9FE188FD3442BB09D4D6A /* /Users/away/code/github/testxdispatch/libxdispatch/include/xdispatch/operation.h */; settings = {ATTRIBUTES = (Public); }; };
+		AA21557747E24A6583B1F4DD /* /Users/away/code/github/testxdispatch/libxdispatch/src/xdispatch_internal.h */ = {isa = PBXBuildFile; fileRef = 020B3705AAC444BD9A693436 /* /Users/away/code/github/testxdispatch/libxdispatch/src/xdispatch_internal.h */; };
+		AB055581931B40838AB0D90A /* /Users/away/code/github/testxdispatch/tests/cxx_dispatch_debug.cpp */ = {isa = PBXBuildFile; fileRef = 75891571AC014AACAE79108F /* /Users/away/code/github/testxdispatch/tests/cxx_dispatch_debug.cpp */; };
+		B10CFBAF7F3741418620737F /* /Users/away/code/github/testxdispatch/libxdispatch/src/semaphore.cpp */ = {isa = PBXBuildFile; fileRef = 3EB630D9441D411C9DA3504B /* /Users/away/code/github/testxdispatch/libxdispatch/src/semaphore.cpp */; };
+		B244D403628548DB8DB9013B /* /Users/away/code/github/testxdispatch/tests/cxx_dispatch_mainqueue.cpp */ = {isa = PBXBuildFile; fileRef = 0B5391593C0B45D99F73CE60 /* /Users/away/code/github/testxdispatch/tests/cxx_dispatch_mainqueue.cpp */; };
+		B426744BBD3E4FAEAD8D7D8A /* /Users/away/code/github/testxdispatch/tests/dispatch_simpleFunction.c */ = {isa = PBXBuildFile; fileRef = 37A11F506207438C85FDC2C8 /* /Users/away/code/github/testxdispatch/tests/dispatch_simpleFunction.c */; };
+		BB9498F9A7934812AAA7A8B1 /* /Users/away/code/github/testxdispatch/tests/cxx_dispatch_source_lambda.cpp */ = {isa = PBXBuildFile; fileRef = 3002066066484BE0AAFCC013 /* /Users/away/code/github/testxdispatch/tests/cxx_dispatch_source_lambda.cpp */; };
+		BCE6FA77FC374C61BAE0D36B /* /Users/away/code/github/testxdispatch/tests/cxx_dispatch_proc_lambda.cpp */ = {isa = PBXBuildFile; fileRef = CA10CC31ED0244B78C531591 /* /Users/away/code/github/testxdispatch/tests/cxx_dispatch_proc_lambda.cpp */; };
+		BDDB8287F0D2493A9CAA6326 /* /Users/away/code/github/testxdispatch/tests/dispatch_drift_blocks.c */ = {isa = PBXBuildFile; fileRef = 15778C2514554B7091481AF7 /* /Users/away/code/github/testxdispatch/tests/dispatch_drift_blocks.c */; };
+		BE4979F65ED942399D9BA534 /* /Users/away/code/github/testxdispatch/tests/dispatch_read_blocks.c */ = {isa = PBXBuildFile; fileRef = 177C1A2E652A4965988264BD /* /Users/away/code/github/testxdispatch/tests/dispatch_read_blocks.c */; };
+		C4DCF75FE3904EF3BBCA94E4 /* /Users/away/code/github/testxdispatch/tests/munit/MUnit.h */ = {isa = PBXBuildFile; fileRef = 03555479DA934ED7800E4612 /* /Users/away/code/github/testxdispatch/tests/munit/MUnit.h */; };
+		CB4B0B17349340B98E0CB527 /* /Users/away/code/github/testxdispatch/tests/cxx_dispatch_serialqueue_lambda.cpp */ = {isa = PBXBuildFile; fileRef = C12603CB2997425FBE825A5F /* /Users/away/code/github/testxdispatch/tests/cxx_dispatch_serialqueue_lambda.cpp */; };
+		CD62ACF80DE342DD959C6A13 /* /Users/away/code/github/testxdispatch/libxdispatch/src/once.cpp */ = {isa = PBXBuildFile; fileRef = 104CDB57FDC9408980FB3DC1 /* /Users/away/code/github/testxdispatch/libxdispatch/src/once.cpp */; };
+		CF1359CCBCB940C1ACFA4156 /* /Users/away/code/github/testxdispatch/tests/dispatch_priority.c */ = {isa = PBXBuildFile; fileRef = 5CFC2CD75CFE48D8AD12FA20 /* /Users/away/code/github/testxdispatch/tests/dispatch_priority.c */; };
+		CFB5C62FE8A0421D93DF67B3 /* /Users/away/code/github/testxdispatch/tests/dispatch_debug.c */ = {isa = PBXBuildFile; fileRef = 2A4BCA43F94C47208B7C01A3 /* /Users/away/code/github/testxdispatch/tests/dispatch_debug.c */; };
+		CFE7D0A7108546E2BE89363E /* /Users/away/code/github/testxdispatch/tests/dispatch_pingpong_blocks.c */ = {isa = PBXBuildFile; fileRef = 50065747EFE040C8A72B6987 /* /Users/away/code/github/testxdispatch/tests/dispatch_pingpong_blocks.c */; };
+		D52F0967EF0345E3861286FD /* /Users/away/code/github/testxdispatch/tests/dispatch_sync.c */ = {isa = PBXBuildFile; fileRef = 57354F007DB544B78B174ED7 /* /Users/away/code/github/testxdispatch/tests/dispatch_sync.c */; };
+		DA478DB197E644C7B6EAC61C /* /Users/away/code/github/testxdispatch/tests/munit/MUnit_cxx.h */ = {isa = PBXBuildFile; fileRef = C4F557E208D54A1F8BF332F3 /* /Users/away/code/github/testxdispatch/tests/munit/MUnit_cxx.h */; };
+		DE5EB20A0AED4177AC5EB69C /* /Users/away/code/github/testxdispatch/tests/munit/typedefs.h */ = {isa = PBXBuildFile; fileRef = 2C196E3486F04EBF8C4A9165 /* /Users/away/code/github/testxdispatch/tests/munit/typedefs.h */; };
+		DE6C96C7EF3E4033A1B29B56 /* /Users/away/code/github/testxdispatch/tests/tests.h */ = {isa = PBXBuildFile; fileRef = A4E0EE762CFC4011ACA3BB90 /* /Users/away/code/github/testxdispatch/tests/tests.h */; };
+		E432C8A100684C32BE7E831D /* /Users/away/code/github/testxdispatch/libxdispatch/src/base.cpp */ = {isa = PBXBuildFile; fileRef = 4528D0A21EB3407387834D83 /* /Users/away/code/github/testxdispatch/libxdispatch/src/base.cpp */; };
+		E4B047DB683041D09A8007FA /* /Users/away/code/github/testxdispatch/tests/dispatch_plusplus_blocks.cpp */ = {isa = PBXBuildFile; fileRef = 72CE277596DD49158223689A /* /Users/away/code/github/testxdispatch/tests/dispatch_plusplus_blocks.cpp */; };
+		E58594DDFF8D42CEB4113884 /* /Users/away/code/github/testxdispatch/libxdispatch/include/xdispatch/once.h */ = {isa = PBXBuildFile; fileRef = E63E0824A31E49C8B09FF05A /* /Users/away/code/github/testxdispatch/libxdispatch/include/xdispatch/once.h */; settings = {ATTRIBUTES = (Public); }; };
+		E8C35958305F4FEEB86E7994 /* /Users/away/code/github/testxdispatch/tests/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = F8B7F80CE4054419A55413B6 /* /Users/away/code/github/testxdispatch/tests/CMakeLists.txt */; };
+		EABF546C652D4B3DA97DC144 /* /Users/away/code/github/testxdispatch/libxdispatch/include/xdispatch/timer.h */ = {isa = PBXBuildFile; fileRef = 023E2029949D4DF288E59120 /* /Users/away/code/github/testxdispatch/libxdispatch/include/xdispatch/timer.h */; settings = {ATTRIBUTES = (Public); }; };
+		F007B1A5A1464233A5C485DC /* /Users/away/code/github/testxdispatch/tests/dispatch_memory_use.c */ = {isa = PBXBuildFile; fileRef = A7C61E0802AB45EF802153CD /* /Users/away/code/github/testxdispatch/tests/dispatch_memory_use.c */; };
+		F0482C1629F54282A992202B /* /Users/away/code/github/testxdispatch/tests/cxx_dispatch_queue_lambda.cpp */ = {isa = PBXBuildFile; fileRef = CFD78D46660D47498593A5A5 /* /Users/away/code/github/testxdispatch/tests/cxx_dispatch_queue_lambda.cpp */; };
+		F058B3814B5C4E1CB70A12DF /* /Users/away/code/github/testxdispatch/libxdispatch/src/source_internal.h */ = {isa = PBXBuildFile; fileRef = DC5BCB246E30484D93AFB7B0 /* /Users/away/code/github/testxdispatch/libxdispatch/src/source_internal.h */; };
+		F1D4EFE884174CE0B71EFF0D /* /Users/away/code/github/testxdispatch/tests/dispatch_timer_bit63_blocks.c */ = {isa = PBXBuildFile; fileRef = F646E1BF6402417FA1C49F1A /* /Users/away/code/github/testxdispatch/tests/dispatch_timer_bit63_blocks.c */; };
+		F271E8743FC7414F85E4FEB6 /* /Users/away/code/github/testxdispatch/tests/munit/assert.c */ = {isa = PBXBuildFile; fileRef = 7F1E3B066094453F899C357C /* /Users/away/code/github/testxdispatch/tests/munit/assert.c */; };
+		F6FEBCB41DFC4DEBA13E95E7 /* /Users/away/code/github/testxdispatch/libxdispatch/src/group.cpp */ = {isa = PBXBuildFile; fileRef = 2C60627900434232819E08D9 /* /Users/away/code/github/testxdispatch/libxdispatch/src/group.cpp */; };
+		FB324CA8035747F0BC8FFCF0 /* /Users/away/code/github/testxdispatch/tests/munit/MUnit_tools.h */ = {isa = PBXBuildFile; fileRef = 98D78BBD5CCE4393B3B7ABF7 /* /Users/away/code/github/testxdispatch/tests/munit/MUnit_tools.h */; };
+		FB8AE31CE54D419DB462D7F5 /* /Users/away/code/github/testxdispatch/libxdispatch/include/xdispatch/any.h */ = {isa = PBXBuildFile; fileRef = 33CD9ADC86F0495BA192C2DA /* /Users/away/code/github/testxdispatch/libxdispatch/include/xdispatch/any.h */; settings = {ATTRIBUTES = (Public); }; };
+		FCE9FCEDCE124F80BF1AFEE0 /* /Users/away/code/github/testxdispatch/tests/dispatch_cascade.c */ = {isa = PBXBuildFile; fileRef = A0E6754807D34A2F8E00E806 /* /Users/away/code/github/testxdispatch/tests/dispatch_cascade.c */; };
+		FDBC92E352024B0196A138B8 /* /Users/away/code/github/testxdispatch/libxdispatch/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = F8C2079C8FB04AE6B3815DC7 /* /Users/away/code/github/testxdispatch/libxdispatch/CMakeLists.txt */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		3AFD90BC4A584D058E6CEFDD /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+		4FEC0028E5194FBD944FED3F /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+		76DD7D0161084E619E0B0F09 /* MinSizeRel */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = MinSizeRel;
+		};
+		94FAA1BA9F404DD78C4E8678 /* RelWithDebInfo */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = RelWithDebInfo;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		1FF234E4FC284ADD8107D4A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0D07DF1CF4164B32A730A690 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF45ACEE4A13466D897AC533;
+			remoteInfo = xdispatch;
+		};
+		3356A9CF6821444BAE611765 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0D07DF1CF4164B32A730A690 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 88B9D4A9247B4C6F91F7B4B2;
+			remoteInfo = xdispatch_tests;
+		};
+		7286D3FE72714A83BD2D96B8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0D07DF1CF4164B32A730A690 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9B79F13B4FC0470F8C1E05C2;
+			remoteInfo = ZERO_CHECK;
+		};
+		74C677DDEFFD41D1AC41BA5D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0D07DF1CF4164B32A730A690 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF45ACEE4A13466D897AC533;
+			remoteInfo = xdispatch;
+		};
+		7ECE4A9868474A5DA1DE5CF9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0D07DF1CF4164B32A730A690 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9B79F13B4FC0470F8C1E05C2;
+			remoteInfo = ZERO_CHECK;
+		};
+		830364A54260435FADC058C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0D07DF1CF4164B32A730A690 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9B79F13B4FC0470F8C1E05C2;
+			remoteInfo = ZERO_CHECK;
+		};
+		91E0AE408CE241F382F1CFAC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0D07DF1CF4164B32A730A690 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ED5F2E71B5544512B71825E8;
+			remoteInfo = ALL_BUILD;
+		};
+		990A9503CE04462485240D4F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0D07DF1CF4164B32A730A690 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 108721A7460C4908AC8CB727;
+			remoteInfo = munit;
+		};
+		9EF0AFF72EC7435AAD15B459 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0D07DF1CF4164B32A730A690 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9B79F13B4FC0470F8C1E05C2;
+			remoteInfo = ZERO_CHECK;
+		};
+		A7916C76C1474D43892F2B4D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0D07DF1CF4164B32A730A690 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9B79F13B4FC0470F8C1E05C2;
+			remoteInfo = ZERO_CHECK;
+		};
+		DE6601E8E86F4356A47972FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0D07DF1CF4164B32A730A690 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9B79F13B4FC0470F8C1E05C2;
+			remoteInfo = ZERO_CHECK;
+		};
+		DF40E7A7B3C6410BB705ED02 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0D07DF1CF4164B32A730A690 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9B79F13B4FC0470F8C1E05C2;
+			remoteInfo = ZERO_CHECK;
+		};
+		EAF260E9313D4B49A3F37164 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0D07DF1CF4164B32A730A690 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9B79F13B4FC0470F8C1E05C2;
+			remoteInfo = ZERO_CHECK;
+		};
+		FEF818FA5C5444ACAF03054B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0D07DF1CF4164B32A730A690 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 108721A7460C4908AC8CB727;
+			remoteInfo = munit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		007B6755CD7D4C85BDEBE37D /* /Users/away/code/github/testxdispatch/libxdispatch/src/synchronized.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = synchronized.cpp; path = libxdispatch/src/synchronized.cpp; sourceTree = SOURCE_ROOT; };
+		020B3705AAC444BD9A693436 /* /Users/away/code/github/testxdispatch/libxdispatch/src/xdispatch_internal.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = xdispatch_internal.h; path = libxdispatch/src/xdispatch_internal.h; sourceTree = SOURCE_ROOT; };
+		023E2029949D4DF288E59120 /* /Users/away/code/github/testxdispatch/libxdispatch/include/xdispatch/timer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = timer.h; path = libxdispatch/include/xdispatch/timer.h; sourceTree = SOURCE_ROOT; };
+		03555479DA934ED7800E4612 /* /Users/away/code/github/testxdispatch/tests/munit/MUnit.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = MUnit.h; path = tests/munit/MUnit.h; sourceTree = SOURCE_ROOT; };
+		088F43008F954850B318139D /* /Users/away/code/github/testxdispatch/tests/cxx_dispatch_serialqueue_blocks.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = cxx_dispatch_serialqueue_blocks.cpp; path = tests/cxx_dispatch_serialqueue_blocks.cpp; sourceTree = SOURCE_ROOT; };
+		0899B8D3FC6D418EA95BBF2C /* /Users/away/code/github/testxdispatch/tests/cxx_dispatch_once.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = cxx_dispatch_once.cpp; path = tests/cxx_dispatch_once.cpp; sourceTree = SOURCE_ROOT; };
+		0B5391593C0B45D99F73CE60 /* /Users/away/code/github/testxdispatch/tests/cxx_dispatch_mainqueue.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = cxx_dispatch_mainqueue.cpp; path = tests/cxx_dispatch_mainqueue.cpp; sourceTree = SOURCE_ROOT; };
+		104CDB57FDC9408980FB3DC1 /* /Users/away/code/github/testxdispatch/libxdispatch/src/once.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = once.cpp; path = libxdispatch/src/once.cpp; sourceTree = SOURCE_ROOT; };
+		1059BE5BAF1F49BF8759BE39 /* /Users/away/code/github/testxdispatch/libxdispatch/src/timer.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = timer.cpp; path = libxdispatch/src/timer.cpp; sourceTree = SOURCE_ROOT; };
+		12BECC1D7CC044EDA24579E3 /* /Users/away/code/github/testxdispatch/libxdispatch/include/xdispatch/semaphore.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = semaphore.h; path = libxdispatch/include/xdispatch/semaphore.h; sourceTree = SOURCE_ROOT; };
+		13E036A4CCF1480B89991E50 /* /Users/away/code/github/testxdispatch/libxdispatch/include/xdispatch/lambda_dispatch.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = lambda_dispatch.h; path = libxdispatch/include/xdispatch/lambda_dispatch.h; sourceTree = SOURCE_ROOT; };
+		15778C2514554B7091481AF7 /* /Users/away/code/github/testxdispatch/tests/dispatch_drift_blocks.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = dispatch_drift_blocks.c; path = tests/dispatch_drift_blocks.c; sourceTree = SOURCE_ROOT; };
+		168B75C3FB4E456FBC3323DA /* /Users/away/code/github/testxdispatch/libxdispatch/include/xdispatch/base.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = base.h; path = libxdispatch/include/xdispatch/base.h; sourceTree = SOURCE_ROOT; };
+		177C1A2E652A4965988264BD /* /Users/away/code/github/testxdispatch/tests/dispatch_read_blocks.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = dispatch_read_blocks.c; path = tests/dispatch_read_blocks.c; sourceTree = SOURCE_ROOT; };
+		1D55672D6F8247B7ACC5FC92 /* /Users/away/code/github/testxdispatch/libxdispatch/include/xdispatch/platform.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = platform.h; path = libxdispatch/include/xdispatch/platform.h; sourceTree = SOURCE_ROOT; };
+		203D5016D1954C209CE6E131 /* /Users/away/code/github/testxdispatch/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		25F9FE188FD3442BB09D4D6A /* /Users/away/code/github/testxdispatch/libxdispatch/include/xdispatch/operation.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = operation.h; path = libxdispatch/include/xdispatch/operation.h; sourceTree = SOURCE_ROOT; };
+		2A4BCA43F94C47208B7C01A3 /* /Users/away/code/github/testxdispatch/tests/dispatch_debug.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = dispatch_debug.c; path = tests/dispatch_debug.c; sourceTree = SOURCE_ROOT; };
+		2C196E3486F04EBF8C4A9165 /* /Users/away/code/github/testxdispatch/tests/munit/typedefs.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = typedefs.h; path = tests/munit/typedefs.h; sourceTree = SOURCE_ROOT; };
+		2C60627900434232819E08D9 /* /Users/away/code/github/testxdispatch/libxdispatch/src/group.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = group.cpp; path = libxdispatch/src/group.cpp; sourceTree = SOURCE_ROOT; };
+		2D0169733B5E431F8569F77D /* /Users/away/code/github/testxdispatch/tests/dispatch_proc_blocks.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = dispatch_proc_blocks.c; path = tests/dispatch_proc_blocks.c; sourceTree = SOURCE_ROOT; };
+		2F551DB96CCC44D182E555D7 /* /Users/away/code/github/testxdispatch/tests/dispatch_timer_bit31_blocks.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = dispatch_timer_bit31_blocks.c; path = tests/dispatch_timer_bit31_blocks.c; sourceTree = SOURCE_ROOT; };
+		3002066066484BE0AAFCC013 /* /Users/away/code/github/testxdispatch/tests/cxx_dispatch_source_lambda.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = cxx_dispatch_source_lambda.cpp; path = tests/cxx_dispatch_source_lambda.cpp; sourceTree = SOURCE_ROOT; };
+		3360C545E9804FFDBDA4D361 /* /Users/away/code/github/testxdispatch/tests/posix_api.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = posix_api.c; path = tests/posix_api.c; sourceTree = SOURCE_ROOT; };
+		338D6F1D08D047FC9837D5A5 /* /Users/away/code/github/testxdispatch/tests/munit/list.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = list.c; path = tests/munit/list.c; sourceTree = SOURCE_ROOT; };
+		33CD9ADC86F0495BA192C2DA /* /Users/away/code/github/testxdispatch/libxdispatch/include/xdispatch/any.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = any.h; path = libxdispatch/include/xdispatch/any.h; sourceTree = SOURCE_ROOT; };
+		36C3FC65EF7E43088D825710 /* /Users/away/code/github/testxdispatch/tests/cxx_synchronized.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = cxx_synchronized.cpp; path = tests/cxx_synchronized.cpp; sourceTree = SOURCE_ROOT; };
+		37A11F506207438C85FDC2C8 /* /Users/away/code/github/testxdispatch/tests/dispatch_simpleFunction.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = dispatch_simpleFunction.c; path = tests/dispatch_simpleFunction.c; sourceTree = SOURCE_ROOT; };
+		3832D63B6D114269B4F39770 /* /Users/away/code/github/testxdispatch/libxdispatch/src/execution.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = execution.h; path = libxdispatch/src/execution.h; sourceTree = SOURCE_ROOT; };
+		3CE030CCC98048428024B64F /* /Users/away/code/github/testxdispatch/tests/cxx_dispatch_source.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = cxx_dispatch_source.cpp; path = tests/cxx_dispatch_source.cpp; sourceTree = SOURCE_ROOT; };
+		3D65694A47574EC2ABA21879 /* /Users/away/code/github/testxdispatch/tests/cxx_dispatch_source_blocks.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = cxx_dispatch_source_blocks.cpp; path = tests/cxx_dispatch_source_blocks.cpp; sourceTree = SOURCE_ROOT; };
+		3EB630D9441D411C9DA3504B /* /Users/away/code/github/testxdispatch/libxdispatch/src/semaphore.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = semaphore.cpp; path = libxdispatch/src/semaphore.cpp; sourceTree = SOURCE_ROOT; };
+		3FB66DD6825A4FC5B86966E4 /* /Users/away/code/github/testxdispatch/tests/munit/tools.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = tools.c; path = tests/munit/tools.c; sourceTree = SOURCE_ROOT; };
+		4528D0A21EB3407387834D83 /* /Users/away/code/github/testxdispatch/libxdispatch/src/base.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = base.cpp; path = libxdispatch/src/base.cpp; sourceTree = SOURCE_ROOT; };
+		484A3330DAD240899B4A1647 /* /Users/away/code/github/testxdispatch/tests/dispatch_once.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = dispatch_once.c; path = tests/dispatch_once.c; sourceTree = SOURCE_ROOT; };
+		4D13EB1B8B61442F90FBEF1F /* /Users/away/code/github/testxdispatch/tests/cxx_dispatch_cascade_blocks.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = cxx_dispatch_cascade_blocks.cpp; path = tests/cxx_dispatch_cascade_blocks.cpp; sourceTree = SOURCE_ROOT; };
+		4E4E9EE41196451FA70106B1 /* /Users/away/code/github/testxdispatch/libxdispatch/src/source_internal.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = source_internal.cpp; path = libxdispatch/src/source_internal.cpp; sourceTree = SOURCE_ROOT; };
+		4EE68487AA534498A60A2AD2 /* /Users/away/code/github/testxdispatch/tests/cxx_dispatch_group_blocks.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = cxx_dispatch_group_blocks.cpp; path = tests/cxx_dispatch_group_blocks.cpp; sourceTree = SOURCE_ROOT; };
+		50065747EFE040C8A72B6987 /* /Users/away/code/github/testxdispatch/tests/dispatch_pingpong_blocks.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = dispatch_pingpong_blocks.c; path = tests/dispatch_pingpong_blocks.c; sourceTree = SOURCE_ROOT; };
+		515FC37406D34F9AAB6C4CD1 /* /Users/away/code/github/testxdispatch/tests/munit/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = tests/munit/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		55EC02E7A46940A0ABDD2EC0 /* /Users/away/code/github/testxdispatch/tests/cxx_tests.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = cxx_tests.h; path = tests/cxx_tests.h; sourceTree = SOURCE_ROOT; };
+		560DAE732C5D4F06BFD6177B /* /Users/away/code/github/testxdispatch/tests/cxx_dispatch_read_blocks.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = cxx_dispatch_read_blocks.cpp; path = tests/cxx_dispatch_read_blocks.cpp; sourceTree = SOURCE_ROOT; };
+		57354F007DB544B78B174ED7 /* /Users/away/code/github/testxdispatch/tests/dispatch_sync.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = dispatch_sync.c; path = tests/dispatch_sync.c; sourceTree = SOURCE_ROOT; };
+		5C91FEF2FBBE427DB8C4DBB8 /* /Users/away/code/github/testxdispatch/libxdispatch/include/xdispatch/source.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = source.h; path = libxdispatch/include/xdispatch/source.h; sourceTree = SOURCE_ROOT; };
+		5CFC2CD75CFE48D8AD12FA20 /* /Users/away/code/github/testxdispatch/tests/dispatch_priority.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = dispatch_priority.c; path = tests/dispatch_priority.c; sourceTree = SOURCE_ROOT; };
+		629CF9E5958745E99F1D5AC0 /* /Users/away/code/github/testxdispatch/tests/cxx_dispatch_semaphore.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = cxx_dispatch_semaphore.cpp; path = tests/cxx_dispatch_semaphore.cpp; sourceTree = SOURCE_ROOT; };
+		66FDC20A85FD4085AE96ACA0 /* /Users/away/code/github/testxdispatch/tests/munit/runner.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = runner.c; path = tests/munit/runner.c; sourceTree = SOURCE_ROOT; };
+		68FC2637A1A94951AE7F6EA2 /* /Users/away/code/github/testxdispatch/tests/cxx_dispatch_fibo.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = cxx_dispatch_fibo.cpp; path = tests/cxx_dispatch_fibo.cpp; sourceTree = SOURCE_ROOT; };
+		69B034076825484680316FB7 /* /Users/away/code/github/testxdispatch/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		6B6C2D957FD446B28B4E03C0 /* /Users/away/code/github/testxdispatch/tests/cxx_dispatch_group.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = cxx_dispatch_group.cpp; path = tests/cxx_dispatch_group.cpp; sourceTree = SOURCE_ROOT; };
+		6E4AF4FA3B7349EA82B23C7A /* /Users/away/code/github/testxdispatch/tests/dispatch_group.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = dispatch_group.c; path = tests/dispatch_group.c; sourceTree = SOURCE_ROOT; };
+		72CE277596DD49158223689A /* /Users/away/code/github/testxdispatch/tests/dispatch_plusplus_blocks.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = dispatch_plusplus_blocks.cpp; path = tests/dispatch_plusplus_blocks.cpp; sourceTree = SOURCE_ROOT; };
+		73BF56012A874C68AA875B32 /* /Users/away/code/github/testxdispatch/tests/munit/MUnit_assert.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = MUnit_assert.h; path = tests/munit/MUnit_assert.h; sourceTree = SOURCE_ROOT; };
+		74BEB0782CBE4995B7429D7D /* /Users/away/code/github/testxdispatch/tests/dispatch_semaphore_blocks.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = dispatch_semaphore_blocks.c; path = tests/dispatch_semaphore_blocks.c; sourceTree = SOURCE_ROOT; };
+		75891571AC014AACAE79108F /* /Users/away/code/github/testxdispatch/tests/cxx_dispatch_debug.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = cxx_dispatch_debug.cpp; path = tests/cxx_dispatch_debug.cpp; sourceTree = SOURCE_ROOT; };
+		76DBFFE54E48445BB5540DC8 /* /Users/away/code/github/testxdispatch/libxdispatch/include/xdispatch/blocks.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = blocks.h; path = libxdispatch/include/xdispatch/blocks.h; sourceTree = SOURCE_ROOT; };
+		789D9FAC2FA649189AB60F85 /* /Users/away/code/github/testxdispatch/tests/cxx_free_lambda.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = cxx_free_lambda.cpp; path = tests/cxx_free_lambda.cpp; sourceTree = SOURCE_ROOT; };
+		7A797C1854EC4D29B7C3B432 /* /Users/away/code/github/testxdispatch/libxdispatch/include/xdispatch/pointer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = pointer.h; path = libxdispatch/include/xdispatch/pointer.h; sourceTree = SOURCE_ROOT; };
+		7F1E3B066094453F899C357C /* /Users/away/code/github/testxdispatch/tests/munit/assert.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = assert.c; path = tests/munit/assert.c; sourceTree = SOURCE_ROOT; };
+		84C7B37E765C458C9BCD1A50 /* /Users/away/code/github/testxdispatch/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		88D4CBAEB8B64450A6637C82 /* /Users/away/code/github/testxdispatch/tests/dispatch_socket_read_write.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = dispatch_socket_read_write.c; path = tests/dispatch_socket_read_write.c; sourceTree = SOURCE_ROOT; };
+		8CA201D8BDEE46DC9493BF75 /* /Users/away/code/github/testxdispatch/tests/cxx_dispatch_timer.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = cxx_dispatch_timer.cpp; path = tests/cxx_dispatch_timer.cpp; sourceTree = SOURCE_ROOT; };
+		9053D80C16A64FDDBB3B1D43 /* /Users/away/code/github/testxdispatch/libxdispatch/include/xdispatch/queue.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = queue.h; path = libxdispatch/include/xdispatch/queue.h; sourceTree = SOURCE_ROOT; };
+		933F72DD223C4CEC91D19F6F /* /Users/away/code/github/testxdispatch/tests/pthread_api.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = pthread_api.c; path = tests/pthread_api.c; sourceTree = SOURCE_ROOT; };
+		955D2F93EA3F4C3C8F776144 /* /Users/away/code/github/testxdispatch/libxdispatch/include/xdispatch/dispatch.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = dispatch.h; path = libxdispatch/include/xdispatch/dispatch.h; sourceTree = SOURCE_ROOT; };
+		98D78BBD5CCE4393B3B7ABF7 /* /Users/away/code/github/testxdispatch/tests/munit/MUnit_tools.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = MUnit_tools.h; path = tests/munit/MUnit_tools.h; sourceTree = SOURCE_ROOT; };
+		9B2C3979BE9C477F83593348 /* /Users/away/code/github/testxdispatch/libxdispatch/src/queue.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = queue.cpp; path = libxdispatch/src/queue.cpp; sourceTree = SOURCE_ROOT; };
+		9D50299D16164A7C9B521A21 /* /Users/away/code/github/testxdispatch/tests/munit/MUnit_runner.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = MUnit_runner.h; path = tests/munit/MUnit_runner.h; sourceTree = SOURCE_ROOT; };
+		9E6790E0215E4BD397304D0E /* munit */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libmunitD.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F3137CCBC3649C5870E7E3C /* /Users/away/code/github/testxdispatch/tests/dispatch_api.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = dispatch_api.c; path = tests/dispatch_api.c; sourceTree = SOURCE_ROOT; };
+		9FD0D581122E41899084992C /* /Users/away/code/github/testxdispatch/tests/atomic_operations.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = atomic_operations.c; path = tests/atomic_operations.c; sourceTree = SOURCE_ROOT; };
+		A06120D68B6943ABB9EBAF4C /* /Users/away/code/github/testxdispatch/libxdispatch/include/xdispatch/dispatch */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = dispatch; path = libxdispatch/include/xdispatch/dispatch; sourceTree = SOURCE_ROOT; };
+		A0E6754807D34A2F8E00E806 /* /Users/away/code/github/testxdispatch/tests/dispatch_cascade.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = dispatch_cascade.c; path = tests/dispatch_cascade.c; sourceTree = SOURCE_ROOT; };
+		A15362BA538D45659A161C0D /* /Users/away/code/github/testxdispatch/tests/main.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = main.c; path = tests/main.c; sourceTree = SOURCE_ROOT; };
+		A4E0EE762CFC4011ACA3BB90 /* /Users/away/code/github/testxdispatch/tests/tests.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = tests.h; path = tests/tests.h; sourceTree = SOURCE_ROOT; };
+		A6E7F6056A144E128FC11DC2 /* /Users/away/code/github/testxdispatch/tests/cxx_free_blocks.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = cxx_free_blocks.cpp; path = tests/cxx_free_blocks.cpp; sourceTree = SOURCE_ROOT; };
+		A7C61E0802AB45EF802153CD /* /Users/away/code/github/testxdispatch/tests/dispatch_memory_use.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = dispatch_memory_use.c; path = tests/dispatch_memory_use.c; sourceTree = SOURCE_ROOT; };
+		AC1FCA5E7369430C86C4DF10 /* /Users/away/code/github/testxdispatch/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		B22915A843CD460E870C5645 /* /Users/away/code/github/testxdispatch/tests/munit/private.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = private.h; path = tests/munit/private.h; sourceTree = SOURCE_ROOT; };
+		B47EC39E4EC74EFA9FF2745C /* /Users/away/code/github/testxdispatch/tests/dispatch_starfish.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = dispatch_starfish.c; path = tests/dispatch_starfish.c; sourceTree = SOURCE_ROOT; };
+		B5B678ED03F0428499B86A4E /* /Users/away/code/github/testxdispatch/tests/cxx_dispatch_group_lambda.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = cxx_dispatch_group_lambda.cpp; path = tests/cxx_dispatch_group_lambda.cpp; sourceTree = SOURCE_ROOT; };
+		B8641D90039142BD9D8EB0C1 /* /Users/away/code/github/testxdispatch/libxdispatch/src/shared_constructor.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = shared_constructor.cpp; path = libxdispatch/src/shared_constructor.cpp; sourceTree = SOURCE_ROOT; };
+		BC10D39BEA84403AA691419C /* /Users/away/code/github/testxdispatch/tests/cxx_dispatch_cascade_lambda.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = cxx_dispatch_cascade_lambda.cpp; path = tests/cxx_dispatch_cascade_lambda.cpp; sourceTree = SOURCE_ROOT; };
+		BCFBE6806A9A4B858D15372B /* /Users/away/code/github/testxdispatch/tests/dispatch_apply.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = dispatch_apply.c; path = tests/dispatch_apply.c; sourceTree = SOURCE_ROOT; };
+		C12603CB2997425FBE825A5F /* /Users/away/code/github/testxdispatch/tests/cxx_dispatch_serialqueue_lambda.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = cxx_dispatch_serialqueue_lambda.cpp; path = tests/cxx_dispatch_serialqueue_lambda.cpp; sourceTree = SOURCE_ROOT; };
+		C19F6F65228343858C383795 /* xdispatch */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = xdispatch.framework/xdispatch; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3A0CEB61E134490A9D44598 /* /Users/away/code/github/testxdispatch/tests/queue_finalizer.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = queue_finalizer.c; path = tests/queue_finalizer.c; sourceTree = SOURCE_ROOT; };
+		C4F557E208D54A1F8BF332F3 /* /Users/away/code/github/testxdispatch/tests/munit/MUnit_cxx.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = MUnit_cxx.h; path = tests/munit/MUnit_cxx.h; sourceTree = SOURCE_ROOT; };
+		C9AF69FC3E1E4FFE819DF0D9 /* /Users/away/code/github/testxdispatch/libxdispatch/src/source.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = source.cpp; path = libxdispatch/src/source.cpp; sourceTree = SOURCE_ROOT; };
+		CA10CC31ED0244B78C531591 /* /Users/away/code/github/testxdispatch/tests/cxx_dispatch_proc_lambda.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = cxx_dispatch_proc_lambda.cpp; path = tests/cxx_dispatch_proc_lambda.cpp; sourceTree = SOURCE_ROOT; };
+		CC393A57BD994C59B2A282DB /* /Users/away/code/github/testxdispatch/libxdispatch/include/xdispatch/group.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = group.h; path = libxdispatch/include/xdispatch/group.h; sourceTree = SOURCE_ROOT; };
+		CC9489EE8AAD45F9ADB39957 /* /Users/away/code/github/testxdispatch/tests/munit/list.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = list.h; path = tests/munit/list.h; sourceTree = SOURCE_ROOT; };
+		CE88FA6D6C7146C392F79C88 /* /Users/away/code/github/testxdispatch/tests/cxx_dispatch_queue_blocks.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = cxx_dispatch_queue_blocks.cpp; path = tests/cxx_dispatch_queue_blocks.cpp; sourceTree = SOURCE_ROOT; };
+		CFD78D46660D47498593A5A5 /* /Users/away/code/github/testxdispatch/tests/cxx_dispatch_queue_lambda.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = cxx_dispatch_queue_lambda.cpp; path = tests/cxx_dispatch_queue_lambda.cpp; sourceTree = SOURCE_ROOT; };
+		D08CD9EF6ED44BECB9318D20 /* /Users/away/code/github/testxdispatch/tests/dispatch_after_blocks.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = dispatch_after_blocks.c; path = tests/dispatch_after_blocks.c; sourceTree = SOURCE_ROOT; };
+		D1BAF77E77994223AE9D2DA5 /* /Users/away/code/github/testxdispatch/tests/dispatch_group_blocks.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = dispatch_group_blocks.c; path = tests/dispatch_group_blocks.c; sourceTree = SOURCE_ROOT; };
+		D2D8F2FEB78F4162881EBEE7 /* /Users/away/code/github/testxdispatch/tests/dispatch_after.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = dispatch_after.c; path = tests/dispatch_after.c; sourceTree = SOURCE_ROOT; };
+		D45DC1F3D7B94076BEEFDAF1 /* /Users/away/code/github/testxdispatch/libxdispatch/include/xdispatch/dispatch_decl.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = dispatch_decl.h; path = libxdispatch/include/xdispatch/dispatch_decl.h; sourceTree = SOURCE_ROOT; };
+		DC5BCB246E30484D93AFB7B0 /* /Users/away/code/github/testxdispatch/libxdispatch/src/source_internal.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = source_internal.h; path = libxdispatch/src/source_internal.h; sourceTree = SOURCE_ROOT; };
+		E63E0824A31E49C8B09FF05A /* /Users/away/code/github/testxdispatch/libxdispatch/include/xdispatch/once.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = once.h; path = libxdispatch/include/xdispatch/once.h; sourceTree = SOURCE_ROOT; };
+		E6B9727697B54EF1868862FD /* /Users/away/code/github/testxdispatch/tests/cxx_dispatch_once_lambda.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = cxx_dispatch_once_lambda.cpp; path = tests/cxx_dispatch_once_lambda.cpp; sourceTree = SOURCE_ROOT; };
+		EBB37B13BF0B44A6AB9F4790 /* /Users/away/code/github/testxdispatch/tests/cxx_dispatch_current.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = cxx_dispatch_current.cpp; path = tests/cxx_dispatch_current.cpp; sourceTree = SOURCE_ROOT; };
+		ECED45E26FDE4870B1F96377 /* xdispatch_tests */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = xdispatch_testsD; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECEF6425F11C4D34A0CE1E46 /* /Users/away/code/github/testxdispatch/tests/cxx_dispatch_read_lambda.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = cxx_dispatch_read_lambda.cpp; path = tests/cxx_dispatch_read_lambda.cpp; sourceTree = SOURCE_ROOT; };
+		EF3D49E9E7FA45DEA57D52F2 /* /Users/away/code/github/testxdispatch/libxdispatch/include/xdispatch/synchronized.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = synchronized.h; path = libxdispatch/include/xdispatch/synchronized.h; sourceTree = SOURCE_ROOT; };
+		F2BF64D904AF4BD2804E8C67 /* /Users/away/code/github/testxdispatch/tests/cxx_dispatch_once_blocks.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = cxx_dispatch_once_blocks.cpp; path = tests/cxx_dispatch_once_blocks.cpp; sourceTree = SOURCE_ROOT; };
+		F36279D065E34D54BE343AF2 /* /Users/away/code/github/testxdispatch/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		F646E1BF6402417FA1C49F1A /* /Users/away/code/github/testxdispatch/tests/dispatch_timer_bit63_blocks.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = dispatch_timer_bit63_blocks.c; path = tests/dispatch_timer_bit63_blocks.c; sourceTree = SOURCE_ROOT; };
+		F78A208525F842AAA9C0B731 /* /Users/away/code/github/testxdispatch/tests/dispatch_serialqueue.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = dispatch_serialqueue.c; path = tests/dispatch_serialqueue.c; sourceTree = SOURCE_ROOT; };
+		F8B7F80CE4054419A55413B6 /* /Users/away/code/github/testxdispatch/tests/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = tests/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		F8C2079C8FB04AE6B3815DC7 /* /Users/away/code/github/testxdispatch/libxdispatch/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = libxdispatch/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		FCEA9CBD480F49AC9BD750B3 /* /Users/away/code/github/testxdispatch/libxdispatch/src/execution.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = execution.cpp; path = libxdispatch/src/execution.cpp; sourceTree = SOURCE_ROOT; };
+		FE8677E98F584D37A0586593 /* /Users/away/code/github/testxdispatch/tests/dispatch_apply_blocks.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = dispatch_apply_blocks.c; path = tests/dispatch_apply_blocks.c; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		1ECD9434047F4EBF9357051D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C19F6F65228343858C383795 /* xdispatch */,
+				ECED45E26FDE4870B1F96377 /* xdispatch_tests */,
+				9E6790E0215E4BD397304D0E /* munit */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1FF8A281DBC9482ABBE4AEA3 /* xdispatch_tests */ = {
+			isa = PBXGroup;
+			children = (
+				7A417FD666794565A7570C25 /* Source Files */,
+				E89529324F8C49B68331FECD /* Header Files */,
+				F8B7F80CE4054419A55413B6 /* /Users/away/code/github/testxdispatch/tests/CMakeLists.txt */,
+			);
+			name = xdispatch_tests;
+			sourceTree = "<group>";
+		};
+		2CF0F6FFFA0547A3BEE079BB /* Experimental */ = {
+			isa = PBXGroup;
+			children = (
+				BE9F7E1DF29A48DFBCED997A /* CMake Rules */,
+				203D5016D1954C209CE6E131 /* /Users/away/code/github/testxdispatch/CMakeLists.txt */,
+			);
+			name = Experimental;
+			sourceTree = "<group>";
+		};
+		4C72F7DC3F9740B6B4A49234 /* cxx */ = {
+			isa = PBXGroup;
+			children = (
+				4528D0A21EB3407387834D83 /* /Users/away/code/github/testxdispatch/libxdispatch/src/base.cpp */,
+				FCEA9CBD480F49AC9BD750B3 /* /Users/away/code/github/testxdispatch/libxdispatch/src/execution.cpp */,
+				3832D63B6D114269B4F39770 /* /Users/away/code/github/testxdispatch/libxdispatch/src/execution.h */,
+				2C60627900434232819E08D9 /* /Users/away/code/github/testxdispatch/libxdispatch/src/group.cpp */,
+				104CDB57FDC9408980FB3DC1 /* /Users/away/code/github/testxdispatch/libxdispatch/src/once.cpp */,
+				9B2C3979BE9C477F83593348 /* /Users/away/code/github/testxdispatch/libxdispatch/src/queue.cpp */,
+				3EB630D9441D411C9DA3504B /* /Users/away/code/github/testxdispatch/libxdispatch/src/semaphore.cpp */,
+				B8641D90039142BD9D8EB0C1 /* /Users/away/code/github/testxdispatch/libxdispatch/src/shared_constructor.cpp */,
+				C9AF69FC3E1E4FFE819DF0D9 /* /Users/away/code/github/testxdispatch/libxdispatch/src/source.cpp */,
+				4E4E9EE41196451FA70106B1 /* /Users/away/code/github/testxdispatch/libxdispatch/src/source_internal.cpp */,
+				DC5BCB246E30484D93AFB7B0 /* /Users/away/code/github/testxdispatch/libxdispatch/src/source_internal.h */,
+				007B6755CD7D4C85BDEBE37D /* /Users/away/code/github/testxdispatch/libxdispatch/src/synchronized.cpp */,
+				1059BE5BAF1F49BF8759BE39 /* /Users/away/code/github/testxdispatch/libxdispatch/src/timer.cpp */,
+				020B3705AAC444BD9A693436 /* /Users/away/code/github/testxdispatch/libxdispatch/src/xdispatch_internal.h */,
+			);
+			name = cxx;
+			sourceTree = "<group>";
+		};
+		4FE2B1521E044BFA86E2C021 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		5AA9CB577C154B37851BC563 /* Continuous */ = {
+			isa = PBXGroup;
+			children = (
+				D98869FAA1C049C3B582EF27 /* CMake Rules */,
+				84C7B37E765C458C9BCD1A50 /* /Users/away/code/github/testxdispatch/CMakeLists.txt */,
+			);
+			name = Continuous;
+			sourceTree = "<group>";
+		};
+		5AB1C2BF8A1047A1B81F0D4A /* xdispatch */ = {
+			isa = PBXGroup;
+			children = (
+				33CD9ADC86F0495BA192C2DA /* /Users/away/code/github/testxdispatch/libxdispatch/include/xdispatch/any.h */,
+				168B75C3FB4E456FBC3323DA /* /Users/away/code/github/testxdispatch/libxdispatch/include/xdispatch/base.h */,
+				76DBFFE54E48445BB5540DC8 /* /Users/away/code/github/testxdispatch/libxdispatch/include/xdispatch/blocks.h */,
+				A06120D68B6943ABB9EBAF4C /* /Users/away/code/github/testxdispatch/libxdispatch/include/xdispatch/dispatch */,
+				955D2F93EA3F4C3C8F776144 /* /Users/away/code/github/testxdispatch/libxdispatch/include/xdispatch/dispatch.h */,
+				D45DC1F3D7B94076BEEFDAF1 /* /Users/away/code/github/testxdispatch/libxdispatch/include/xdispatch/dispatch_decl.h */,
+				CC393A57BD994C59B2A282DB /* /Users/away/code/github/testxdispatch/libxdispatch/include/xdispatch/group.h */,
+				13E036A4CCF1480B89991E50 /* /Users/away/code/github/testxdispatch/libxdispatch/include/xdispatch/lambda_dispatch.h */,
+				E63E0824A31E49C8B09FF05A /* /Users/away/code/github/testxdispatch/libxdispatch/include/xdispatch/once.h */,
+				25F9FE188FD3442BB09D4D6A /* /Users/away/code/github/testxdispatch/libxdispatch/include/xdispatch/operation.h */,
+				1D55672D6F8247B7ACC5FC92 /* /Users/away/code/github/testxdispatch/libxdispatch/include/xdispatch/platform.h */,
+				7A797C1854EC4D29B7C3B432 /* /Users/away/code/github/testxdispatch/libxdispatch/include/xdispatch/pointer.h */,
+				9053D80C16A64FDDBB3B1D43 /* /Users/away/code/github/testxdispatch/libxdispatch/include/xdispatch/queue.h */,
+				12BECC1D7CC044EDA24579E3 /* /Users/away/code/github/testxdispatch/libxdispatch/include/xdispatch/semaphore.h */,
+				5C91FEF2FBBE427DB8C4DBB8 /* /Users/away/code/github/testxdispatch/libxdispatch/include/xdispatch/source.h */,
+				EF3D49E9E7FA45DEA57D52F2 /* /Users/away/code/github/testxdispatch/libxdispatch/include/xdispatch/synchronized.h */,
+				023E2029949D4DF288E59120 /* /Users/away/code/github/testxdispatch/libxdispatch/include/xdispatch/timer.h */,
+			);
+			name = xdispatch;
+			sourceTree = "<group>";
+		};
+		75023DFB372B4AA29F812584 /* NightlyMemoryCheck */ = {
+			isa = PBXGroup;
+			children = (
+				4FE2B1521E044BFA86E2C021 /* CMake Rules */,
+				69B034076825484680316FB7 /* /Users/away/code/github/testxdispatch/CMakeLists.txt */,
+			);
+			name = NightlyMemoryCheck;
+			sourceTree = "<group>";
+		};
+		7A417FD666794565A7570C25 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				9FD0D581122E41899084992C /* /Users/away/code/github/testxdispatch/tests/atomic_operations.c */,
+				4D13EB1B8B61442F90FBEF1F /* /Users/away/code/github/testxdispatch/tests/cxx_dispatch_cascade_blocks.cpp */,
+				BC10D39BEA84403AA691419C /* /Users/away/code/github/testxdispatch/tests/cxx_dispatch_cascade_lambda.cpp */,
+				EBB37B13BF0B44A6AB9F4790 /* /Users/away/code/github/testxdispatch/tests/cxx_dispatch_current.cpp */,
+				75891571AC014AACAE79108F /* /Users/away/code/github/testxdispatch/tests/cxx_dispatch_debug.cpp */,
+				68FC2637A1A94951AE7F6EA2 /* /Users/away/code/github/testxdispatch/tests/cxx_dispatch_fibo.cpp */,
+				6B6C2D957FD446B28B4E03C0 /* /Users/away/code/github/testxdispatch/tests/cxx_dispatch_group.cpp */,
+				4EE68487AA534498A60A2AD2 /* /Users/away/code/github/testxdispatch/tests/cxx_dispatch_group_blocks.cpp */,
+				B5B678ED03F0428499B86A4E /* /Users/away/code/github/testxdispatch/tests/cxx_dispatch_group_lambda.cpp */,
+				0B5391593C0B45D99F73CE60 /* /Users/away/code/github/testxdispatch/tests/cxx_dispatch_mainqueue.cpp */,
+				0899B8D3FC6D418EA95BBF2C /* /Users/away/code/github/testxdispatch/tests/cxx_dispatch_once.cpp */,
+				F2BF64D904AF4BD2804E8C67 /* /Users/away/code/github/testxdispatch/tests/cxx_dispatch_once_blocks.cpp */,
+				E6B9727697B54EF1868862FD /* /Users/away/code/github/testxdispatch/tests/cxx_dispatch_once_lambda.cpp */,
+				CA10CC31ED0244B78C531591 /* /Users/away/code/github/testxdispatch/tests/cxx_dispatch_proc_lambda.cpp */,
+				CE88FA6D6C7146C392F79C88 /* /Users/away/code/github/testxdispatch/tests/cxx_dispatch_queue_blocks.cpp */,
+				CFD78D46660D47498593A5A5 /* /Users/away/code/github/testxdispatch/tests/cxx_dispatch_queue_lambda.cpp */,
+				560DAE732C5D4F06BFD6177B /* /Users/away/code/github/testxdispatch/tests/cxx_dispatch_read_blocks.cpp */,
+				ECEF6425F11C4D34A0CE1E46 /* /Users/away/code/github/testxdispatch/tests/cxx_dispatch_read_lambda.cpp */,
+				629CF9E5958745E99F1D5AC0 /* /Users/away/code/github/testxdispatch/tests/cxx_dispatch_semaphore.cpp */,
+				088F43008F954850B318139D /* /Users/away/code/github/testxdispatch/tests/cxx_dispatch_serialqueue_blocks.cpp */,
+				C12603CB2997425FBE825A5F /* /Users/away/code/github/testxdispatch/tests/cxx_dispatch_serialqueue_lambda.cpp */,
+				3CE030CCC98048428024B64F /* /Users/away/code/github/testxdispatch/tests/cxx_dispatch_source.cpp */,
+				3D65694A47574EC2ABA21879 /* /Users/away/code/github/testxdispatch/tests/cxx_dispatch_source_blocks.cpp */,
+				3002066066484BE0AAFCC013 /* /Users/away/code/github/testxdispatch/tests/cxx_dispatch_source_lambda.cpp */,
+				8CA201D8BDEE46DC9493BF75 /* /Users/away/code/github/testxdispatch/tests/cxx_dispatch_timer.cpp */,
+				A6E7F6056A144E128FC11DC2 /* /Users/away/code/github/testxdispatch/tests/cxx_free_blocks.cpp */,
+				789D9FAC2FA649189AB60F85 /* /Users/away/code/github/testxdispatch/tests/cxx_free_lambda.cpp */,
+				36C3FC65EF7E43088D825710 /* /Users/away/code/github/testxdispatch/tests/cxx_synchronized.cpp */,
+				D2D8F2FEB78F4162881EBEE7 /* /Users/away/code/github/testxdispatch/tests/dispatch_after.c */,
+				D08CD9EF6ED44BECB9318D20 /* /Users/away/code/github/testxdispatch/tests/dispatch_after_blocks.c */,
+				9F3137CCBC3649C5870E7E3C /* /Users/away/code/github/testxdispatch/tests/dispatch_api.c */,
+				BCFBE6806A9A4B858D15372B /* /Users/away/code/github/testxdispatch/tests/dispatch_apply.c */,
+				FE8677E98F584D37A0586593 /* /Users/away/code/github/testxdispatch/tests/dispatch_apply_blocks.c */,
+				A0E6754807D34A2F8E00E806 /* /Users/away/code/github/testxdispatch/tests/dispatch_cascade.c */,
+				2A4BCA43F94C47208B7C01A3 /* /Users/away/code/github/testxdispatch/tests/dispatch_debug.c */,
+				15778C2514554B7091481AF7 /* /Users/away/code/github/testxdispatch/tests/dispatch_drift_blocks.c */,
+				6E4AF4FA3B7349EA82B23C7A /* /Users/away/code/github/testxdispatch/tests/dispatch_group.c */,
+				D1BAF77E77994223AE9D2DA5 /* /Users/away/code/github/testxdispatch/tests/dispatch_group_blocks.c */,
+				A7C61E0802AB45EF802153CD /* /Users/away/code/github/testxdispatch/tests/dispatch_memory_use.c */,
+				484A3330DAD240899B4A1647 /* /Users/away/code/github/testxdispatch/tests/dispatch_once.c */,
+				50065747EFE040C8A72B6987 /* /Users/away/code/github/testxdispatch/tests/dispatch_pingpong_blocks.c */,
+				72CE277596DD49158223689A /* /Users/away/code/github/testxdispatch/tests/dispatch_plusplus_blocks.cpp */,
+				5CFC2CD75CFE48D8AD12FA20 /* /Users/away/code/github/testxdispatch/tests/dispatch_priority.c */,
+				2D0169733B5E431F8569F77D /* /Users/away/code/github/testxdispatch/tests/dispatch_proc_blocks.c */,
+				177C1A2E652A4965988264BD /* /Users/away/code/github/testxdispatch/tests/dispatch_read_blocks.c */,
+				74BEB0782CBE4995B7429D7D /* /Users/away/code/github/testxdispatch/tests/dispatch_semaphore_blocks.c */,
+				F78A208525F842AAA9C0B731 /* /Users/away/code/github/testxdispatch/tests/dispatch_serialqueue.c */,
+				37A11F506207438C85FDC2C8 /* /Users/away/code/github/testxdispatch/tests/dispatch_simpleFunction.c */,
+				88D4CBAEB8B64450A6637C82 /* /Users/away/code/github/testxdispatch/tests/dispatch_socket_read_write.c */,
+				B47EC39E4EC74EFA9FF2745C /* /Users/away/code/github/testxdispatch/tests/dispatch_starfish.c */,
+				57354F007DB544B78B174ED7 /* /Users/away/code/github/testxdispatch/tests/dispatch_sync.c */,
+				2F551DB96CCC44D182E555D7 /* /Users/away/code/github/testxdispatch/tests/dispatch_timer_bit31_blocks.c */,
+				F646E1BF6402417FA1C49F1A /* /Users/away/code/github/testxdispatch/tests/dispatch_timer_bit63_blocks.c */,
+				A15362BA538D45659A161C0D /* /Users/away/code/github/testxdispatch/tests/main.c */,
+				3360C545E9804FFDBDA4D361 /* /Users/away/code/github/testxdispatch/tests/posix_api.c */,
+				933F72DD223C4CEC91D19F6F /* /Users/away/code/github/testxdispatch/tests/pthread_api.c */,
+				C3A0CEB61E134490A9D44598 /* /Users/away/code/github/testxdispatch/tests/queue_finalizer.c */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		85FC4673AF88464B9EB668C8 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		9A33E98DF2224A96951E4E8B /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				E683DE7AB59B4A2F841EDF41 /* CMake Rules */,
+				AC1FCA5E7369430C86C4DF10 /* /Users/away/code/github/testxdispatch/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		BE9F7E1DF29A48DFBCED997A /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		CDE652E640ED42CCA338E8D1 /* munit */ = {
+			isa = PBXGroup;
+			children = (
+				03555479DA934ED7800E4612 /* /Users/away/code/github/testxdispatch/tests/munit/MUnit.h */,
+				73BF56012A874C68AA875B32 /* /Users/away/code/github/testxdispatch/tests/munit/MUnit_assert.h */,
+				C4F557E208D54A1F8BF332F3 /* /Users/away/code/github/testxdispatch/tests/munit/MUnit_cxx.h */,
+				9D50299D16164A7C9B521A21 /* /Users/away/code/github/testxdispatch/tests/munit/MUnit_runner.h */,
+				98D78BBD5CCE4393B3B7ABF7 /* /Users/away/code/github/testxdispatch/tests/munit/MUnit_tools.h */,
+				7F1E3B066094453F899C357C /* /Users/away/code/github/testxdispatch/tests/munit/assert.c */,
+				338D6F1D08D047FC9837D5A5 /* /Users/away/code/github/testxdispatch/tests/munit/list.c */,
+				CC9489EE8AAD45F9ADB39957 /* /Users/away/code/github/testxdispatch/tests/munit/list.h */,
+				B22915A843CD460E870C5645 /* /Users/away/code/github/testxdispatch/tests/munit/private.h */,
+				66FDC20A85FD4085AE96ACA0 /* /Users/away/code/github/testxdispatch/tests/munit/runner.c */,
+				3FB66DD6825A4FC5B86966E4 /* /Users/away/code/github/testxdispatch/tests/munit/tools.c */,
+				2C196E3486F04EBF8C4A9165 /* /Users/away/code/github/testxdispatch/tests/munit/typedefs.h */,
+			);
+			name = munit;
+			sourceTree = "<group>";
+		};
+		D98869FAA1C049C3B582EF27 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		E1B7E67AE0274355A7722F4F /* munit */ = {
+			isa = PBXGroup;
+			children = (
+				CDE652E640ED42CCA338E8D1 /* munit */,
+				515FC37406D34F9AAB6C4CD1 /* /Users/away/code/github/testxdispatch/tests/munit/CMakeLists.txt */,
+			);
+			name = munit;
+			sourceTree = "<group>";
+		};
+		E683DE7AB59B4A2F841EDF41 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		E89529324F8C49B68331FECD /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				55EC02E7A46940A0ABDD2EC0 /* /Users/away/code/github/testxdispatch/tests/cxx_tests.h */,
+				A4E0EE762CFC4011ACA3BB90 /* /Users/away/code/github/testxdispatch/tests/tests.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		ED6B701ABF204C1992983237 = {
+			isa = PBXGroup;
+			children = (
+				75023DFB372B4AA29F812584 /* NightlyMemoryCheck */,
+				FC64D2CF92084EBB832219A4 /* Nightly */,
+				5AA9CB577C154B37851BC563 /* Continuous */,
+				2CF0F6FFFA0547A3BEE079BB /* Experimental */,
+				9A33E98DF2224A96951E4E8B /* ALL_BUILD */,
+				EF27E0AA1F01403EA756938F /* xdispatch */,
+				1FF8A281DBC9482ABBE4AEA3 /* xdispatch_tests */,
+				E1B7E67AE0274355A7722F4F /* munit */,
+				1ECD9434047F4EBF9357051D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EF27E0AA1F01403EA756938F /* xdispatch */ = {
+			isa = PBXGroup;
+			children = (
+				5AB1C2BF8A1047A1B81F0D4A /* xdispatch */,
+				4C72F7DC3F9740B6B4A49234 /* cxx */,
+				F8C2079C8FB04AE6B3815DC7 /* /Users/away/code/github/testxdispatch/libxdispatch/CMakeLists.txt */,
+			);
+			name = xdispatch;
+			sourceTree = "<group>";
+		};
+		FC64D2CF92084EBB832219A4 /* Nightly */ = {
+			isa = PBXGroup;
+			children = (
+				85FC4673AF88464B9EB668C8 /* CMake Rules */,
+				F36279D065E34D54BE343AF2 /* /Users/away/code/github/testxdispatch/CMakeLists.txt */,
+			);
+			name = Nightly;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		3BB7D61D80EE4DEF9CF3995C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB8AE31CE54D419DB462D7F5 /* /Users/away/code/github/testxdispatch/libxdispatch/include/xdispatch/any.h */,
+				393E1C1C1BAD4BA1A129EF32 /* /Users/away/code/github/testxdispatch/libxdispatch/include/xdispatch/base.h */,
+				60E70706A261408D90B99852 /* /Users/away/code/github/testxdispatch/libxdispatch/include/xdispatch/blocks.h */,
+				3DB89D6941294ADE9C4E4670 /* /Users/away/code/github/testxdispatch/libxdispatch/include/xdispatch/dispatch */,
+				664256CBDD5D4B918A39B551 /* /Users/away/code/github/testxdispatch/libxdispatch/include/xdispatch/dispatch.h */,
+				7B187814C3AC4C85B7D610E1 /* /Users/away/code/github/testxdispatch/libxdispatch/include/xdispatch/dispatch_decl.h */,
+				4929A63BB43647AA9CBFD810 /* /Users/away/code/github/testxdispatch/libxdispatch/include/xdispatch/group.h */,
+				64CF8FAAE5C54A408FB95012 /* /Users/away/code/github/testxdispatch/libxdispatch/include/xdispatch/lambda_dispatch.h */,
+				E58594DDFF8D42CEB4113884 /* /Users/away/code/github/testxdispatch/libxdispatch/include/xdispatch/once.h */,
+				A912FB26461A419EB97A9CCD /* /Users/away/code/github/testxdispatch/libxdispatch/include/xdispatch/operation.h */,
+				17781AA811EC4CB49AB298A4 /* /Users/away/code/github/testxdispatch/libxdispatch/include/xdispatch/platform.h */,
+				783944C8E5BC4FB681158FBD /* /Users/away/code/github/testxdispatch/libxdispatch/include/xdispatch/pointer.h */,
+				7529F04B1D054FC3BD822FD6 /* /Users/away/code/github/testxdispatch/libxdispatch/include/xdispatch/queue.h */,
+				183A6575282F499C80DFEB5A /* /Users/away/code/github/testxdispatch/libxdispatch/include/xdispatch/semaphore.h */,
+				52D8A322E07A437AA0FC2896 /* /Users/away/code/github/testxdispatch/libxdispatch/include/xdispatch/source.h */,
+				449CF487077C4A5192C1F617 /* /Users/away/code/github/testxdispatch/libxdispatch/include/xdispatch/synchronized.h */,
+				EABF546C652D4B3DA97DC144 /* /Users/away/code/github/testxdispatch/libxdispatch/include/xdispatch/timer.h */,
+				4AAF33AA95B14E9BB15C9E2A /* /Users/away/code/github/testxdispatch/libxdispatch/src/execution.h */,
+				F058B3814B5C4E1CB70A12DF /* /Users/away/code/github/testxdispatch/libxdispatch/src/source_internal.h */,
+				AA21557747E24A6583B1F4DD /* /Users/away/code/github/testxdispatch/libxdispatch/src/xdispatch_internal.h */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		108721A7460C4908AC8CB727 /* munit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6592C044F3F6413A9780326B /* Build configuration list for PBXNativeTarget "munit" */;
+			buildPhases = (
+				C580BE8B16AA474A9FA36D4C /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B7A505A4F3BB49DF9E3B4390 /* PBXTargetDependency */,
+			);
+			name = munit;
+			productName = munit;
+			productReference = 9E6790E0215E4BD397304D0E /* munit */;
+			productType = "com.apple.product-type.library.static";
+		};
+		88B9D4A9247B4C6F91F7B4B2 /* xdispatch_tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 542A6FE0C3554EB49EE26194 /* Build configuration list for PBXNativeTarget "xdispatch_tests" */;
+			buildPhases = (
+				8B825C5BE3FB47DCB28E0C35 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E8133DD8FA704BB08E1B9699 /* PBXTargetDependency */,
+				66BA66962C684BFDB303934B /* PBXTargetDependency */,
+				55CD8C14374848D3959F22DA /* PBXTargetDependency */,
+			);
+			name = xdispatch_tests;
+			productName = xdispatch_tests;
+			productReference = ECED45E26FDE4870B1F96377 /* xdispatch_tests */;
+			productType = "com.apple.product-type.tool";
+		};
+		FF45ACEE4A13466D897AC533 /* xdispatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A590AE9DF0684C0E9095FD09 /* Build configuration list for PBXNativeTarget "xdispatch" */;
+			buildPhases = (
+				1300F2608EB6404CB33F61A9 /* CMake PreBuild Rules */,
+				3BB7D61D80EE4DEF9CF3995C /* Headers */,
+				396F4032609A4C37821121F7 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				14B97B6DDD8849D59398B50A /* PBXTargetDependency */,
+			);
+			name = xdispatch;
+			productName = xdispatch;
+			productReference = C19F6F65228343858C383795 /* xdispatch */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0D07DF1CF4164B32A730A690 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 5DE4551E5E954AF09E56FA71 /* Build configuration list for PBXProject "xdispatch" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				3AFD90BC4A584D058E6CEFDD /* Debug */,
+				4FEC0028E5194FBD944FED3F /* Release */,
+				76DD7D0161084E619E0B0F09 /* MinSizeRel */,
+				94FAA1BA9F404DD78C4E8678 /* RelWithDebInfo */,
+			);
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = ED6B701ABF204C1992983237;
+			projectDirPath = ../;
+			projectRoot = "";
+			targets = (
+				ED5F2E71B5544512B71825E8 /* ALL_BUILD */,
+				9D218E7FA95848D58464AACF /* Continuous */,
+				21C16C67AF74459CAED0F5DC /* Experimental */,
+				ED3F95B32F7E42078B1A2159 /* Nightly */,
+				0A431441EEA341AD850C5F93 /* NightlyMemoryCheck */,
+				3E68E3FFFFA143D0A9A22534 /* RUN_TESTS */,
+				9B79F13B4FC0470F8C1E05C2 /* ZERO_CHECK */,
+				29414DC786EF40DFBB448D3D /* install */,
+				FF45ACEE4A13466D897AC533 /* xdispatch */,
+				88B9D4A9247B4C6F91F7B4B2 /* xdispatch_tests */,
+				108721A7460C4908AC8CB727 /* munit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0093AF1243C646489F2B5E59 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/away/code/github/testxdispatch/b -f /Users/away/code/github/testxdispatch/b/CMakeScripts/RUN_TESTS_postBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		1300F2608EB6404CB33F61A9 /* CMake PreBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PreBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/away/code/github/testxdispatch/b/libxdispatch -f /Users/away/code/github/testxdispatch/b/libxdispatch/CMakeScripts/xdispatch_preBuildCommands.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		16281DB9AF6945ABA658FF25 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		2D30C16F6B9449C2B7396A5D /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/away/code/github/testxdispatch/b -f /Users/away/code/github/testxdispatch/b/CMakeScripts/Continuous_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		3B1B59D837ED49A1A683F463 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/away/code/github/testxdispatch/b -f /Users/away/code/github/testxdispatch/b/CMakeScripts/install_postBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		3B3AE74299AA41F1AF0C29C5 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/away/code/github/testxdispatch/b -f /Users/away/code/github/testxdispatch/b/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		405364FD176645C19469368C = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		4E389B3D06B24DB6A3F0BDD3 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/away/code/github/testxdispatch/b -f /Users/away/code/github/testxdispatch/b/CMakeScripts/NightlyMemoryCheck_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		691603367842413BAF9C0351 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		70556EAAB204465D8E35BFC2 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/away/code/github/testxdispatch/b -f /Users/away/code/github/testxdispatch/b/CMakeScripts/Nightly_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		81267DE9FFA64003A2BA1ADE = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		961517B607824C0884835CE1 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		A4950A72C4DE42658500A1C2 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		D1FD0586A1DA4144BE4ABD11 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/away/code/github/testxdispatch/b -f /Users/away/code/github/testxdispatch/b/CMakeScripts/Experimental_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		D5233C1258FE4231A02866DC = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		F1C6571A545A498C89EED8E9 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		FECD67C916B144B49A0798D3 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/away/code/github/testxdispatch/b -f /Users/away/code/github/testxdispatch/b/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		396F4032609A4C37821121F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E432C8A100684C32BE7E831D /* /Users/away/code/github/testxdispatch/libxdispatch/src/base.cpp */,
+				4DF3BB820F434C00B83C9EDC /* /Users/away/code/github/testxdispatch/libxdispatch/src/execution.cpp */,
+				F6FEBCB41DFC4DEBA13E95E7 /* /Users/away/code/github/testxdispatch/libxdispatch/src/group.cpp */,
+				CD62ACF80DE342DD959C6A13 /* /Users/away/code/github/testxdispatch/libxdispatch/src/once.cpp */,
+				1E4F1F45184D460A90958D07 /* /Users/away/code/github/testxdispatch/libxdispatch/src/queue.cpp */,
+				B10CFBAF7F3741418620737F /* /Users/away/code/github/testxdispatch/libxdispatch/src/semaphore.cpp */,
+				57924E207AD64C7592777044 /* /Users/away/code/github/testxdispatch/libxdispatch/src/shared_constructor.cpp */,
+				03FFDC1711014B169D210AAF /* /Users/away/code/github/testxdispatch/libxdispatch/src/source.cpp */,
+				0CF58D31CE7A4442928C276F /* /Users/away/code/github/testxdispatch/libxdispatch/src/source_internal.cpp */,
+				A2DF0E15CB474729AAB52979 /* /Users/away/code/github/testxdispatch/libxdispatch/src/synchronized.cpp */,
+				8C8E1DBB4564490BA17A301B /* /Users/away/code/github/testxdispatch/libxdispatch/src/timer.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B825C5BE3FB47DCB28E0C35 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				914E00DD658A48D19A2B39A2 /* /Users/away/code/github/testxdispatch/tests/atomic_operations.c */,
+				18003A1083DC4159835A4709 /* /Users/away/code/github/testxdispatch/tests/cxx_dispatch_cascade_blocks.cpp */,
+				93DD4F3976044E29BAC3FFF4 /* /Users/away/code/github/testxdispatch/tests/cxx_dispatch_cascade_lambda.cpp */,
+				8072AAE763274F60B711F463 /* /Users/away/code/github/testxdispatch/tests/cxx_dispatch_current.cpp */,
+				AB055581931B40838AB0D90A /* /Users/away/code/github/testxdispatch/tests/cxx_dispatch_debug.cpp */,
+				12C84DDECA454BD1ADD9896E /* /Users/away/code/github/testxdispatch/tests/cxx_dispatch_fibo.cpp */,
+				7EA5B0705F604E9F9D5C25A5 /* /Users/away/code/github/testxdispatch/tests/cxx_dispatch_group.cpp */,
+				6B1AC56453CA4E46990BC004 /* /Users/away/code/github/testxdispatch/tests/cxx_dispatch_group_blocks.cpp */,
+				318E9DA3E67E41388E6527DE /* /Users/away/code/github/testxdispatch/tests/cxx_dispatch_group_lambda.cpp */,
+				B244D403628548DB8DB9013B /* /Users/away/code/github/testxdispatch/tests/cxx_dispatch_mainqueue.cpp */,
+				3B1B2FD129624740B7F4D079 /* /Users/away/code/github/testxdispatch/tests/cxx_dispatch_once.cpp */,
+				288DC70A399D41028C6667F2 /* /Users/away/code/github/testxdispatch/tests/cxx_dispatch_once_blocks.cpp */,
+				4BCC1B5C70D1440EA9E5454F /* /Users/away/code/github/testxdispatch/tests/cxx_dispatch_once_lambda.cpp */,
+				BCE6FA77FC374C61BAE0D36B /* /Users/away/code/github/testxdispatch/tests/cxx_dispatch_proc_lambda.cpp */,
+				2ADD23539B2943969D2DE373 /* /Users/away/code/github/testxdispatch/tests/cxx_dispatch_queue_blocks.cpp */,
+				F0482C1629F54282A992202B /* /Users/away/code/github/testxdispatch/tests/cxx_dispatch_queue_lambda.cpp */,
+				1B03F836E27D47CD9CA357A6 /* /Users/away/code/github/testxdispatch/tests/cxx_dispatch_read_blocks.cpp */,
+				44BEE3056F5844E8B3696C5F /* /Users/away/code/github/testxdispatch/tests/cxx_dispatch_read_lambda.cpp */,
+				37316BCAC4A643EA8C80A246 /* /Users/away/code/github/testxdispatch/tests/cxx_dispatch_semaphore.cpp */,
+				6113917954B04912802EFC05 /* /Users/away/code/github/testxdispatch/tests/cxx_dispatch_serialqueue_blocks.cpp */,
+				CB4B0B17349340B98E0CB527 /* /Users/away/code/github/testxdispatch/tests/cxx_dispatch_serialqueue_lambda.cpp */,
+				2FA03A73EBB14B7EB434EE25 /* /Users/away/code/github/testxdispatch/tests/cxx_dispatch_source.cpp */,
+				384F64F4D64E4BC28C008F5C /* /Users/away/code/github/testxdispatch/tests/cxx_dispatch_source_blocks.cpp */,
+				BB9498F9A7934812AAA7A8B1 /* /Users/away/code/github/testxdispatch/tests/cxx_dispatch_source_lambda.cpp */,
+				12258DB2557643DB9A0EAAF0 /* /Users/away/code/github/testxdispatch/tests/cxx_dispatch_timer.cpp */,
+				44B79534BD994BC69D4D3385 /* /Users/away/code/github/testxdispatch/tests/cxx_free_blocks.cpp */,
+				9D09A19AD10C42E28F22D2B3 /* /Users/away/code/github/testxdispatch/tests/cxx_free_lambda.cpp */,
+				4E168D1316894669BBD9CE08 /* /Users/away/code/github/testxdispatch/tests/cxx_synchronized.cpp */,
+				5A634902F35F4371BC7F1C10 /* /Users/away/code/github/testxdispatch/tests/dispatch_after.c */,
+				12172C30BD2646B2A7AD7308 /* /Users/away/code/github/testxdispatch/tests/dispatch_after_blocks.c */,
+				7BB1DF55BF7F4DAAB51B9671 /* /Users/away/code/github/testxdispatch/tests/dispatch_api.c */,
+				2B4ACDD9F33B45C99B18D747 /* /Users/away/code/github/testxdispatch/tests/dispatch_apply.c */,
+				8F44FBFDFF414E0A9A34D88F /* /Users/away/code/github/testxdispatch/tests/dispatch_apply_blocks.c */,
+				FCE9FCEDCE124F80BF1AFEE0 /* /Users/away/code/github/testxdispatch/tests/dispatch_cascade.c */,
+				CFB5C62FE8A0421D93DF67B3 /* /Users/away/code/github/testxdispatch/tests/dispatch_debug.c */,
+				BDDB8287F0D2493A9CAA6326 /* /Users/away/code/github/testxdispatch/tests/dispatch_drift_blocks.c */,
+				3878F373C6A94452B229B2F7 /* /Users/away/code/github/testxdispatch/tests/dispatch_group.c */,
+				4B25CD9026D94CE3B6245AB7 /* /Users/away/code/github/testxdispatch/tests/dispatch_group_blocks.c */,
+				F007B1A5A1464233A5C485DC /* /Users/away/code/github/testxdispatch/tests/dispatch_memory_use.c */,
+				26F7D4C2756546B0B363CD45 /* /Users/away/code/github/testxdispatch/tests/dispatch_once.c */,
+				CFE7D0A7108546E2BE89363E /* /Users/away/code/github/testxdispatch/tests/dispatch_pingpong_blocks.c */,
+				E4B047DB683041D09A8007FA /* /Users/away/code/github/testxdispatch/tests/dispatch_plusplus_blocks.cpp */,
+				CF1359CCBCB940C1ACFA4156 /* /Users/away/code/github/testxdispatch/tests/dispatch_priority.c */,
+				120D57D768B5416486D5921D /* /Users/away/code/github/testxdispatch/tests/dispatch_proc_blocks.c */,
+				BE4979F65ED942399D9BA534 /* /Users/away/code/github/testxdispatch/tests/dispatch_read_blocks.c */,
+				59E56DE9F6FF4AC49DE33E98 /* /Users/away/code/github/testxdispatch/tests/dispatch_semaphore_blocks.c */,
+				0277F3FC7E77416EABCE1404 /* /Users/away/code/github/testxdispatch/tests/dispatch_serialqueue.c */,
+				B426744BBD3E4FAEAD8D7D8A /* /Users/away/code/github/testxdispatch/tests/dispatch_simpleFunction.c */,
+				1DB7520DA5374B299AAD1C0B /* /Users/away/code/github/testxdispatch/tests/dispatch_socket_read_write.c */,
+				949EAEB3A823489D8EF86D8C /* /Users/away/code/github/testxdispatch/tests/dispatch_starfish.c */,
+				D52F0967EF0345E3861286FD /* /Users/away/code/github/testxdispatch/tests/dispatch_sync.c */,
+				766BA0A470B949C3A7CD86AB /* /Users/away/code/github/testxdispatch/tests/dispatch_timer_bit31_blocks.c */,
+				F1D4EFE884174CE0B71EFF0D /* /Users/away/code/github/testxdispatch/tests/dispatch_timer_bit63_blocks.c */,
+				8C113D04671545978A375CBD /* /Users/away/code/github/testxdispatch/tests/main.c */,
+				427DBB2124384A89A322B2E3 /* /Users/away/code/github/testxdispatch/tests/posix_api.c */,
+				974B8EEC6C8F4B7D9FD384CE /* /Users/away/code/github/testxdispatch/tests/pthread_api.c */,
+				31F04CB73D4D4FE595659626 /* /Users/away/code/github/testxdispatch/tests/queue_finalizer.c */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C580BE8B16AA474A9FA36D4C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F271E8743FC7414F85E4FEB6 /* /Users/away/code/github/testxdispatch/tests/munit/assert.c */,
+				3CBA708D076649E6B0DD7C69 /* /Users/away/code/github/testxdispatch/tests/munit/list.c */,
+				70CFD44B655F468CA32F8B83 /* /Users/away/code/github/testxdispatch/tests/munit/runner.c */,
+				3A537AA089634014ADD2A59C /* /Users/away/code/github/testxdispatch/tests/munit/tools.c */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		13B66C393F3840A990CDA4A7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ED5F2E71B5544512B71825E8 /* ALL_BUILD */;
+			targetProxy = 91E0AE408CE241F382F1CFAC /* PBXContainerItemProxy */;
+		};
+		14B97B6DDD8849D59398B50A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9B79F13B4FC0470F8C1E05C2 /* ZERO_CHECK */;
+			targetProxy = EAF260E9313D4B49A3F37164 /* PBXContainerItemProxy */;
+		};
+		2E19EC7DCB22489C939FB4B2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9B79F13B4FC0470F8C1E05C2 /* ZERO_CHECK */;
+			targetProxy = 7ECE4A9868474A5DA1DE5CF9 /* PBXContainerItemProxy */;
+		};
+		410C267D0AA1438A9059AAE3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 88B9D4A9247B4C6F91F7B4B2 /* xdispatch_tests */;
+			targetProxy = 3356A9CF6821444BAE611765 /* PBXContainerItemProxy */;
+		};
+		55CD8C14374848D3959F22DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9B79F13B4FC0470F8C1E05C2 /* ZERO_CHECK */;
+			targetProxy = 7286D3FE72714A83BD2D96B8 /* PBXContainerItemProxy */;
+		};
+		66BA66962C684BFDB303934B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 108721A7460C4908AC8CB727 /* munit */;
+			targetProxy = 990A9503CE04462485240D4F /* PBXContainerItemProxy */;
+		};
+		84508B5772C7475DBCAEF914 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9B79F13B4FC0470F8C1E05C2 /* ZERO_CHECK */;
+			targetProxy = DF40E7A7B3C6410BB705ED02 /* PBXContainerItemProxy */;
+		};
+		86C2DAAD241F4DD486A39371 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9B79F13B4FC0470F8C1E05C2 /* ZERO_CHECK */;
+			targetProxy = A7916C76C1474D43892F2B4D /* PBXContainerItemProxy */;
+		};
+		94A11BEC047D4E868C082C21 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 108721A7460C4908AC8CB727 /* munit */;
+			targetProxy = FEF818FA5C5444ACAF03054B /* PBXContainerItemProxy */;
+		};
+		964E4AA8DA2A44F9856CA9BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9B79F13B4FC0470F8C1E05C2 /* ZERO_CHECK */;
+			targetProxy = 830364A54260435FADC058C9 /* PBXContainerItemProxy */;
+		};
+		9F3FE77A6E1D41918E685171 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9B79F13B4FC0470F8C1E05C2 /* ZERO_CHECK */;
+			targetProxy = DE6601E8E86F4356A47972FA /* PBXContainerItemProxy */;
+		};
+		A950F464525947C0BCCB217D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF45ACEE4A13466D897AC533 /* xdispatch */;
+			targetProxy = 1FF234E4FC284ADD8107D4A1 /* PBXContainerItemProxy */;
+		};
+		B7A505A4F3BB49DF9E3B4390 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9B79F13B4FC0470F8C1E05C2 /* ZERO_CHECK */;
+			targetProxy = 9EF0AFF72EC7435AAD15B459 /* PBXContainerItemProxy */;
+		};
+		E8133DD8FA704BB08E1B9699 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF45ACEE4A13466D897AC533 /* xdispatch */;
+			targetProxy = 74C677DDEFFD41D1AC41BA5D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0544D30C56B64021BD7B3F10 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Nightly;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/away/code/github/testxdispatch/b;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		0AC671985314470EAF63E72C /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/away/code/github/testxdispatch/b;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		0B1AAF9EC21743679D7C198F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/away/code/github/testxdispatch/b;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		12E9B62D3F2B4B5296C6F24B /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Continuous;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/away/code/github/testxdispatch/b;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		13157A8FABCB4EEA8324D865 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Experimental;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/away/code/github/testxdispatch/b;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		1A234188970F4EC4B2B3E41C /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/away/code/github/testxdispatch/b/bin/MinSizeRel;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = " -DDEBUG=1 -Wall -Werror -Wno-unused-function -DMZ_MACOS=1 -DMZ_HAS_CXX11=1 -DMZ_HAS_CXX0X=1 -fvisibility=hidden -DHAVE_NATIVE_DISPATCH_H=1     -DNDEBUG  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = munit;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/away/code/github/testxdispatch/b/tests/munit;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		211892B3504D46C984F7C6BF /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/away/code/github/testxdispatch/b;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		24F58645D2C34CA787921C90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/away/code/github/testxdispatch/b;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		250E7CFA32A440ACBA413B4A /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/away/code/github/testxdispatch/b;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		29426699D5964D0799B041D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = NightlyMemoryCheck;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/away/code/github/testxdispatch/b;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		295427F63B434342841ABD6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/away/code/github/testxdispatch/b/bin/Release;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/away/code/github/testxdispatch/b/tests,/Users/away/code/github/testxdispatch/libxdispatch/include);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = " -DDEBUG=1 -Wall -Werror -Wno-unused-function -DMZ_MACOS=1 -DMZ_HAS_CXX11=1 -DMZ_HAS_CXX0X=1 -fvisibility=hidden -DHAVE_NATIVE_DISPATCH_H=1 -DTEST_LAMBDA=1 -DTEST_C_BLOCKS=1 -DTEST_CXX_BLOCKS=1     -DNDEBUG          ";
+				OTHER_CPLUSPLUSFLAGS = " -DDEBUG=1 -std=c++11 -fgnu-keywords -Wall -Werror -Wno-unused-function -DMZ_MACOS=1 -Wno-unknown-pragmas -DMZ_HAS_CXX11=1 -DMZ_HAS_CXX0X=1 -fvisibility=hidden -DHAVE_NATIVE_DISPATCH_H=1 -DTEST_LAMBDA=1 -DTEST_C_BLOCKS=1 -DTEST_CXX_BLOCKS=1     -DNDEBUG          ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Users/away/code/github/testxdispatch/b/bin/Release/xdispatch.framework/Versions/0.8.0~devel/xdispatch /Users/away/code/github/testxdispatch/b/bin/Release/libmunit.a";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = xdispatch_tests;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/away/code/github/testxdispatch/b/tests;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		2EDA3B39D1D7417A82A0BE27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/away/code/github/testxdispatch/b/bin/Debug;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = " -DDEBUG=1 -Wall -Werror -Wno-unused-function -DMZ_MACOS=1 -DMZ_HAS_CXX11=1 -DMZ_HAS_CXX0X=1 -fvisibility=hidden -DHAVE_NATIVE_DISPATCH_H=1    -DDEBUG           -fno-inline  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = munitD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/away/code/github/testxdispatch/b/tests/munit;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		354CF5ED719D4EEA8B1601D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Experimental;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/away/code/github/testxdispatch/b;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		3FF1B18CD63546E290074B70 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk;
+				SYMROOT = /Users/away/code/github/testxdispatch/b/build;
+			};
+			name = RelWithDebInfo;
+		};
+		419B98926EAC4AB2B6231072 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/away/code/github/testxdispatch/b/bin/RelWithDebInfo;
+				DYLIB_COMPATIBILITY_VERSION = 0.8.0;
+				DYLIB_CURRENT_VERSION = 0.8.0;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_VERSION = "0.8.0~devel";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",xdispatch_EXPORTS);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INFOPLIST_FILE = /Users/away/code/github/testxdispatch/b/libxdispatch/CMakeFiles/xdispatch.dir/Info.plist;
+				INSTALL_PATH = /Users/away/code/github/testxdispatch/b/bin/RelWithDebInfo;
+				LIBRARY_SEARCH_PATHS = "";
+				LIBRARY_STYLE = DYNAMIC;
+				OTHER_CPLUSPLUSFLAGS = " -DDEBUG=1 -std=c++11 -fgnu-keywords -Wall -Werror -Wno-unused-function -DMZ_MACOS=1 -Wno-unknown-pragmas -DMZ_HAS_CXX11=1 -DMZ_HAS_CXX0X=1 -fvisibility=hidden -DHAVE_NATIVE_DISPATCH_H=1 -DXDISPATCH_MAKEDLL        -DNDEBUG -fPIC  ";
+				OTHER_LDFLAGS = "  ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = xdispatch;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/away/code/github/testxdispatch/b/libxdispatch;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		434D8CE432F647D5B1510BFA /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/away/code/github/testxdispatch/b/bin/MinSizeRel;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/away/code/github/testxdispatch/b/tests,/Users/away/code/github/testxdispatch/libxdispatch/include);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = " -DDEBUG=1 -Wall -Werror -Wno-unused-function -DMZ_MACOS=1 -DMZ_HAS_CXX11=1 -DMZ_HAS_CXX0X=1 -fvisibility=hidden -DHAVE_NATIVE_DISPATCH_H=1 -DTEST_LAMBDA=1 -DTEST_C_BLOCKS=1 -DTEST_CXX_BLOCKS=1     -DNDEBUG  ";
+				OTHER_CPLUSPLUSFLAGS = " -DDEBUG=1 -std=c++11 -fgnu-keywords -Wall -Werror -Wno-unused-function -DMZ_MACOS=1 -Wno-unknown-pragmas -DMZ_HAS_CXX11=1 -DMZ_HAS_CXX0X=1 -fvisibility=hidden -DHAVE_NATIVE_DISPATCH_H=1 -DTEST_LAMBDA=1 -DTEST_C_BLOCKS=1 -DTEST_CXX_BLOCKS=1     -DNDEBUG  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Users/away/code/github/testxdispatch/b/bin/MinSizeRel/xdispatch.framework/Versions/0.8.0~devel/xdispatch /Users/away/code/github/testxdispatch/b/bin/MinSizeRel/libmunit.a";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = xdispatch_tests;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/away/code/github/testxdispatch/b/tests;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		4E694033650A44FCAE1DD12A /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = NightlyMemoryCheck;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/away/code/github/testxdispatch/b;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		4F11A66147B44E228F482924 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/away/code/github/testxdispatch/b;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		56D3673FAF164B2BBFA858A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/away/code/github/testxdispatch/b;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		5C33F3B9BC954BD090CBD658 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk;
+				SYMROOT = /Users/away/code/github/testxdispatch/b/build;
+			};
+			name = MinSizeRel;
+		};
+		5C6A836C70B3491A9004852F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Nightly;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/away/code/github/testxdispatch/b;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		5D5B4DB6F22945BFBA66FEA7 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/away/code/github/testxdispatch/b;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		637F82DEB0CA4D1B88B9284A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk;
+				SYMROOT = /Users/away/code/github/testxdispatch/b/build;
+			};
+			name = Debug;
+		};
+		662870E5CA7D4957B61EC22B /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/away/code/github/testxdispatch/b;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		67F55B0102EE432E859C542A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/away/code/github/testxdispatch/b/bin/Debug;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/away/code/github/testxdispatch/b/tests,/Users/away/code/github/testxdispatch/libxdispatch/include);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = " -DDEBUG=1 -Wall -Werror -Wno-unused-function -DMZ_MACOS=1 -DMZ_HAS_CXX11=1 -DMZ_HAS_CXX0X=1 -fvisibility=hidden -DHAVE_NATIVE_DISPATCH_H=1 -DTEST_LAMBDA=1 -DTEST_C_BLOCKS=1 -DTEST_CXX_BLOCKS=1    -DDEBUG           -fno-inline  ";
+				OTHER_CPLUSPLUSFLAGS = " -DDEBUG=1 -std=c++11 -fgnu-keywords -Wall -Werror -Wno-unused-function -DMZ_MACOS=1 -Wno-unknown-pragmas -DMZ_HAS_CXX11=1 -DMZ_HAS_CXX0X=1 -fvisibility=hidden -DHAVE_NATIVE_DISPATCH_H=1 -DTEST_LAMBDA=1 -DTEST_C_BLOCKS=1 -DTEST_CXX_BLOCKS=1    -DDEBUG           -fno-inline  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Users/away/code/github/testxdispatch/b/bin/Debug/xdispatch.framework/Versions/0.8.0~devel/xdispatch /Users/away/code/github/testxdispatch/b/bin/Debug/libmunitD.a";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = xdispatch_testsD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/away/code/github/testxdispatch/b/tests;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		6E9ED26D70DD4A2282A29E07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/away/code/github/testxdispatch/b;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		7562F03A7B8C42D6B9CCADB6 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = NightlyMemoryCheck;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/away/code/github/testxdispatch/b;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		76BA67C5A3B14FC795CA9184 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Continuous;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/away/code/github/testxdispatch/b;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		7C5A3F817DF349738E089973 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/away/code/github/testxdispatch/b;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		810FDAF37ADA43B2871B056B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/away/code/github/testxdispatch/b/bin/Release;
+				DYLIB_COMPATIBILITY_VERSION = 0.8.0;
+				DYLIB_CURRENT_VERSION = 0.8.0;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_VERSION = "0.8.0~devel";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",xdispatch_EXPORTS);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INFOPLIST_FILE = /Users/away/code/github/testxdispatch/b/libxdispatch/CMakeFiles/xdispatch.dir/Info.plist;
+				INSTALL_PATH = /Users/away/code/github/testxdispatch/b/bin/Release;
+				LIBRARY_SEARCH_PATHS = "";
+				LIBRARY_STYLE = DYNAMIC;
+				OTHER_CPLUSPLUSFLAGS = " -DDEBUG=1 -std=c++11 -fgnu-keywords -Wall -Werror -Wno-unused-function -DMZ_MACOS=1 -Wno-unknown-pragmas -DMZ_HAS_CXX11=1 -DMZ_HAS_CXX0X=1 -fvisibility=hidden -DHAVE_NATIVE_DISPATCH_H=1 -DXDISPATCH_MAKEDLL     -DNDEBUG         -fPIC  ";
+				OTHER_LDFLAGS = "  ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = xdispatch;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/away/code/github/testxdispatch/b/libxdispatch;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		8677ED1553744FAABDF69ACE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk;
+				SYMROOT = /Users/away/code/github/testxdispatch/b/build;
+			};
+			name = Release;
+		};
+		878598C1A3204812A0460DE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/away/code/github/testxdispatch/b/bin/Debug;
+				DYLIB_COMPATIBILITY_VERSION = 0.8.0;
+				DYLIB_CURRENT_VERSION = 0.8.0;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_VERSION = "0.8.0~devel";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",xdispatch_EXPORTS);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INFOPLIST_FILE = /Users/away/code/github/testxdispatch/b/libxdispatch/CMakeFiles/xdispatch.dir/Info.plist;
+				INSTALL_PATH = /Users/away/code/github/testxdispatch/b/bin/Debug;
+				LIBRARY_SEARCH_PATHS = "";
+				LIBRARY_STYLE = DYNAMIC;
+				OTHER_CPLUSPLUSFLAGS = " -DDEBUG=1 -std=c++11 -fgnu-keywords -Wall -Werror -Wno-unused-function -DMZ_MACOS=1 -Wno-unknown-pragmas -DMZ_HAS_CXX11=1 -DMZ_HAS_CXX0X=1 -fvisibility=hidden -DHAVE_NATIVE_DISPATCH_H=1 -DXDISPATCH_MAKEDLL    -DDEBUG           -fno-inline -fPIC  ";
+				OTHER_LDFLAGS = "  ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = xdispatch;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/away/code/github/testxdispatch/b/libxdispatch;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		87E6D67BEF0145F7A72ED72B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Nightly;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/away/code/github/testxdispatch/b;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		8CD1646C158949BDAE3C87CB /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Experimental;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/away/code/github/testxdispatch/b;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		9476E8AF54C84E61AC461B16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/away/code/github/testxdispatch/b;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		9F8F079DFFD34A23B9503273 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Experimental;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/away/code/github/testxdispatch/b;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		A01F75DC8E784C11B585BC30 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/away/code/github/testxdispatch/b;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		A39857516E254EEE8F85DAFC /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/away/code/github/testxdispatch/b;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		A5621A7CF9794E15AB62D58F /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/away/code/github/testxdispatch/b/bin/RelWithDebInfo;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = " -DDEBUG=1 -Wall -Werror -Wno-unused-function -DMZ_MACOS=1 -DMZ_HAS_CXX11=1 -DMZ_HAS_CXX0X=1 -fvisibility=hidden -DHAVE_NATIVE_DISPATCH_H=1        -DNDEBUG  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = munit;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/away/code/github/testxdispatch/b/tests/munit;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		AECE79197BEC449BBEC5DF8B /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/away/code/github/testxdispatch/b/bin/MinSizeRel;
+				DYLIB_COMPATIBILITY_VERSION = 0.8.0;
+				DYLIB_CURRENT_VERSION = 0.8.0;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_VERSION = "0.8.0~devel";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",xdispatch_EXPORTS);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INFOPLIST_FILE = /Users/away/code/github/testxdispatch/b/libxdispatch/CMakeFiles/xdispatch.dir/Info.plist;
+				INSTALL_PATH = /Users/away/code/github/testxdispatch/b/bin/MinSizeRel;
+				LIBRARY_SEARCH_PATHS = "";
+				LIBRARY_STYLE = DYNAMIC;
+				OTHER_CPLUSPLUSFLAGS = " -DDEBUG=1 -std=c++11 -fgnu-keywords -Wall -Werror -Wno-unused-function -DMZ_MACOS=1 -Wno-unknown-pragmas -DMZ_HAS_CXX11=1 -DMZ_HAS_CXX0X=1 -fvisibility=hidden -DHAVE_NATIVE_DISPATCH_H=1 -DXDISPATCH_MAKEDLL     -DNDEBUG -fPIC  ";
+				OTHER_LDFLAGS = "  ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = xdispatch;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/away/code/github/testxdispatch/b/libxdispatch;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		AFE90AE86D6C4F989ECC8AA1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/away/code/github/testxdispatch/b;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		B492F0F0B42747D1B1C6D985 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/away/code/github/testxdispatch/b/bin/RelWithDebInfo;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/away/code/github/testxdispatch/b/tests,/Users/away/code/github/testxdispatch/libxdispatch/include);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = " -DDEBUG=1 -Wall -Werror -Wno-unused-function -DMZ_MACOS=1 -DMZ_HAS_CXX11=1 -DMZ_HAS_CXX0X=1 -fvisibility=hidden -DHAVE_NATIVE_DISPATCH_H=1 -DTEST_LAMBDA=1 -DTEST_C_BLOCKS=1 -DTEST_CXX_BLOCKS=1        -DNDEBUG  ";
+				OTHER_CPLUSPLUSFLAGS = " -DDEBUG=1 -std=c++11 -fgnu-keywords -Wall -Werror -Wno-unused-function -DMZ_MACOS=1 -Wno-unknown-pragmas -DMZ_HAS_CXX11=1 -DMZ_HAS_CXX0X=1 -fvisibility=hidden -DHAVE_NATIVE_DISPATCH_H=1 -DTEST_LAMBDA=1 -DTEST_C_BLOCKS=1 -DTEST_CXX_BLOCKS=1        -DNDEBUG  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Users/away/code/github/testxdispatch/b/bin/RelWithDebInfo/xdispatch.framework/Versions/0.8.0~devel/xdispatch /Users/away/code/github/testxdispatch/b/bin/RelWithDebInfo/libmunit.a";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = xdispatch_tests;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/away/code/github/testxdispatch/b/tests;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		BF5E32E709AF427F9A015ECE /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Continuous;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/away/code/github/testxdispatch/b;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		C2AF72B472E8475FA94C18E4 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/away/code/github/testxdispatch/b;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		D42E0D43B51C46C2947DCDCF /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Nightly;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/away/code/github/testxdispatch/b;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		DF5C32E79DAF4A289C003B25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/away/code/github/testxdispatch/b/bin/Release;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = " -DDEBUG=1 -Wall -Werror -Wno-unused-function -DMZ_MACOS=1 -DMZ_HAS_CXX11=1 -DMZ_HAS_CXX0X=1 -fvisibility=hidden -DHAVE_NATIVE_DISPATCH_H=1     -DNDEBUG          ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = munit;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/away/code/github/testxdispatch/b/tests/munit;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		EBDCF05710AE41709A2C675B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = NightlyMemoryCheck;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/away/code/github/testxdispatch/b;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		F8F07A64CFAD4B3BAD99914E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Continuous;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/away/code/github/testxdispatch/b;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0E88487BC3DC4AC9BB811EFB /* Build configuration list for PBXAggregateTarget "Nightly" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C6A836C70B3491A9004852F /* Debug */,
+				87E6D67BEF0145F7A72ED72B /* Release */,
+				D42E0D43B51C46C2947DCDCF /* MinSizeRel */,
+				0544D30C56B64021BD7B3F10 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		28BFACAD2947428A855CCBF4 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E9ED26D70DD4A2282A29E07 /* Debug */,
+				7C5A3F817DF349738E089973 /* Release */,
+				A01F75DC8E784C11B585BC30 /* MinSizeRel */,
+				C2AF72B472E8475FA94C18E4 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		542A6FE0C3554EB49EE26194 /* Build configuration list for PBXNativeTarget "xdispatch_tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67F55B0102EE432E859C542A /* Debug */,
+				295427F63B434342841ABD6A /* Release */,
+				434D8CE432F647D5B1510BFA /* MinSizeRel */,
+				B492F0F0B42747D1B1C6D985 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		5DE4551E5E954AF09E56FA71 /* Build configuration list for PBXProject "xdispatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				637F82DEB0CA4D1B88B9284A /* Debug */,
+				8677ED1553744FAABDF69ACE /* Release */,
+				5C33F3B9BC954BD090CBD658 /* MinSizeRel */,
+				3FF1B18CD63546E290074B70 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		6592C044F3F6413A9780326B /* Build configuration list for PBXNativeTarget "munit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2EDA3B39D1D7417A82A0BE27 /* Debug */,
+				DF5C32E79DAF4A289C003B25 /* Release */,
+				1A234188970F4EC4B2B3E41C /* MinSizeRel */,
+				A5621A7CF9794E15AB62D58F /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		767ECAE5C6AF46DC9E3399B2 /* Build configuration list for PBXAggregateTarget "Experimental" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				354CF5ED719D4EEA8B1601D7 /* Debug */,
+				13157A8FABCB4EEA8324D865 /* Release */,
+				8CD1646C158949BDAE3C87CB /* MinSizeRel */,
+				9F8F079DFFD34A23B9503273 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		8D200EB6935844DCA3387314 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B1AAF9EC21743679D7C198F /* Debug */,
+				AFE90AE86D6C4F989ECC8AA1 /* Release */,
+				662870E5CA7D4957B61EC22B /* MinSizeRel */,
+				0AC671985314470EAF63E72C /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		A45DF51F87B643FBACE90370 /* Build configuration list for PBXAggregateTarget "RUN_TESTS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9476E8AF54C84E61AC461B16 /* Debug */,
+				56D3673FAF164B2BBFA858A2 /* Release */,
+				A39857516E254EEE8F85DAFC /* MinSizeRel */,
+				250E7CFA32A440ACBA413B4A /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		A590AE9DF0684C0E9095FD09 /* Build configuration list for PBXNativeTarget "xdispatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				878598C1A3204812A0460DE9 /* Debug */,
+				810FDAF37ADA43B2871B056B /* Release */,
+				AECE79197BEC449BBEC5DF8B /* MinSizeRel */,
+				419B98926EAC4AB2B6231072 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		A7D2C1DF50D341D2ACD58E8C /* Build configuration list for PBXAggregateTarget "Continuous" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76BA67C5A3B14FC795CA9184 /* Debug */,
+				F8F07A64CFAD4B3BAD99914E /* Release */,
+				12E9B62D3F2B4B5296C6F24B /* MinSizeRel */,
+				BF5E32E709AF427F9A015ECE /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E23E9E82E76A4BC4AB7F89CF /* Build configuration list for PBXAggregateTarget "NightlyMemoryCheck" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBDCF05710AE41709A2C675B /* Debug */,
+				29426699D5964D0799B041D8 /* Release */,
+				7562F03A7B8C42D6B9CCADB6 /* MinSizeRel */,
+				4E694033650A44FCAE1DD12A /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		FB96319343224DB8BC168E1A /* Build configuration list for PBXAggregateTarget "install" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24F58645D2C34CA787921C90 /* Debug */,
+				4F11A66147B44E228F482924 /* Release */,
+				5D5B4DB6F22945BFBA66FEA7 /* MinSizeRel */,
+				211892B3504D46C984F7C6BF /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0D07DF1CF4164B32A730A690 /* Project object */;
+}
