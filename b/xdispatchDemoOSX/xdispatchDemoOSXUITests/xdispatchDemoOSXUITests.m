@@ -1,6 +1,6 @@
 //
-//  xdispatchDemoUITests.m
-//  xdispatchDemoUITests
+//  xdispatchDemoOSXUITests.m
+//  xdispatchDemoOSXUITests
 //
 //  Created by Away on 2018/6/18.
 //  Copyright © 2018 Away. All rights reserved.
@@ -8,11 +8,11 @@
 
 #import <XCTest/XCTest.h>
 
-@interface xdispatchDemoUITests : XCTestCase
+@interface xdispatchDemoOSXUITests : XCTestCase
 
 @end
 
-@implementation xdispatchDemoUITests
+@implementation xdispatchDemoOSXUITests
 
 - (void)setUp {
     [super setUp];
