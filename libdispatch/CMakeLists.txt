@@ -85,7 +85,7 @@ source_group(core\\shims FILES ${SHIM})
 
 # res file
 if(MZ_WINDOWS)
-    set(RES_FILE ${CMAKE_CURRENT_BINARY_DIR}/version.rc)
+    set(RES_FILE ${CMAKE_CURRENT_BINARY_DIR}/version.rc ../main.cpp)
     configure_file(${CMAKE_CURRENT_SOURCE_DIR}/version.rc.in ${CMAKE_CURRENT_BINARY_DIR}/version.rc)
 endif()
 

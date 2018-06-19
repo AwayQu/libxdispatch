@@ -1,0 +1,17 @@
+/Users/away/code/github/testxdispatch/b/CMakeFiles/install.dir
+/Users/away/code/github/testxdispatch/b/CMakeFiles/RUN_TESTS.dir
+/Users/away/code/github/testxdispatch/b/CMakeFiles/NightlyMemoryCheck.dir
+/Users/away/code/github/testxdispatch/b/CMakeFiles/Nightly.dir
+/Users/away/code/github/testxdispatch/b/CMakeFiles/Continuous.dir
+/Users/away/code/github/testxdispatch/b/CMakeFiles/Experimental.dir
+/Users/away/code/github/testxdispatch/b/CMakeFiles/ALL_BUILD.dir
+/Users/away/code/github/testxdispatch/b/CMakeFiles/ZERO_CHECK.dir
+/Users/away/code/github/testxdispatch/b/libxdispatch/CMakeFiles/install.dir
+/Users/away/code/github/testxdispatch/b/libxdispatch/CMakeFiles/RUN_TESTS.dir
+/Users/away/code/github/testxdispatch/b/libxdispatch/CMakeFiles/xdispatch.dir
+/Users/away/code/github/testxdispatch/b/tests/CMakeFiles/install.dir
+/Users/away/code/github/testxdispatch/b/tests/CMakeFiles/RUN_TESTS.dir
+/Users/away/code/github/testxdispatch/b/tests/CMakeFiles/xdispatch_tests.dir
+/Users/away/code/github/testxdispatch/b/tests/munit/CMakeFiles/RUN_TESTS.dir
+/Users/away/code/github/testxdispatch/b/tests/munit/CMakeFiles/install.dir
+/Users/away/code/github/testxdispatch/b/tests/munit/CMakeFiles/munit.dir
