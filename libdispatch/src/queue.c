@@ -619,6 +619,8 @@ dispatch_queue_t
 	}
 
 	label_len = strlen(label);
+
+	bool to_concurrent = (label_len == 7);
 	if (label_len < (DISPATCH_QUEUE_MIN_LABEL_SIZE - 1)) {
 		label_len = (DISPATCH_QUEUE_MIN_LABEL_SIZE - 1);
 	}
@@ -631,6 +633,10 @@ dispatch_queue_t
 
 	_dispatch_queue_init(dq);
 	strcpy(dq->dq_label, label);
+
+	if (to_concurrent) {
+		dq->dq_width = UINT32_MAX;
+	}
 
 #ifndef DISPATCH_NO_LEGACY
 	if (slowpath(attr)) {
@@ -1615,6 +1621,11 @@ void
 				_dispatch_continuation_pop(dc);
 				_dispatch_workitem_inc();
 			} else {
+                //if (dq->dq_running > 1) {
+                //    goto out;
+                //}
+                //_dispatch_continuation_pop(dc);
+                //_dispatch_workitem_inc();
 				_dispatch_async_f_redirect(dq, dc);
 			}
 		} while ((dc = next_dc));
