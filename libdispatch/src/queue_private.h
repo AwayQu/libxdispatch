@@ -28,7 +28,7 @@
 #define __DISPATCH_QUEUE_PRIVATE__
 
 #ifndef __DISPATCH_INDIRECT__
-#error "Please #include <dispatch/dispatch.h> instead of this file directly."
+//#error "Please #include <dispatch/dispatch.h> instead of this file directly."
 #include <dispatch/base.h> // for HeaderDoc
 #endif
 
