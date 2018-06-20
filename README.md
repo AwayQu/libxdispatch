@@ -2,10 +2,9 @@ libxdispatch
 =================
 
 Source code forked from https://github.com/mlba-team/xdispatch
-
 =================
 
-## Changed with forked origin
+## changed with forked origin
 
 Add exeutable `main.cpp`.
 
@@ -22,7 +21,7 @@ Add exeutable `main.cpp`.
 
 debug gcd source 
 
-## Usage：
+## usage：
 
 * use linux platform
 
