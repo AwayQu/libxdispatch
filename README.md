@@ -1,17 +1,33 @@
-xdispatch (trunk)
+libxdispatch 
 =================
 
-XDispatch provides the power of Grand Central Dispatch not only on Mac OS 10.6+
-but also on Windows and Linux. The XDispatch framework consists of three libraries:
- * libdispatch
- * libxdispatch
- * libqtdispatch
+Source code forked from https://github.com/mlba-team/xdispatch
 
-Feel free to fork it and change it as you like. We always welcome any bugfixes or
-improvements to our current code base.
+=================
+
+## Changed with forked origin
+
+Add exeutable `main.cpp`.
+
+## contians lib
+
+`pthread_workqueue`
+
+`kqueue`
+
+`libdispatch`
 
 
-Usage
------
+## aims
 
-Please see the documentation at http://opensource.mlba-team.de/xdispatch for details.
+debug gcd source 
+
+## Usage：
+
+* use linux platform
+
+* clone the code
+  
+* git submodule init & git submodule update
+
+* open with clion or other support cmake's ide
